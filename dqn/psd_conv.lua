@@ -1,6 +1,7 @@
-require 'unsup'
 require 'image'
 require 'gnuplot'
+--require 'unsupgpu'
+require 'unsup'
 
 dofile 'psd_data.lua'
 
@@ -15,9 +16,8 @@ cmd:text()
 cmd:text()
 cmd:text('Options')
 cmd:option('-dir','outputs.psd', 'subdirectory to save experimens in')
-cmd:option('-data','tr-berkeley-N5K-M56x56-lcn.bin','Data set file')
 cmd:option('-seed', 123211, 'initial random seed')
-cmd:option('-inputsize',25, 'size of input patches')
+cmd:option('-inputsize',35, 'size of input patches')
 cmd:option('-nfiltersin', 1, 'number of input convolutional filters')
 cmd:option('-nfiltersout', 4, 'number of output convolutional filters')
 cmd:option('-conntable','','connection table for the unsupervised module')
@@ -28,14 +28,14 @@ cmd:option('-encoderType','tanh','Encoder Architecture')
 cmd:option('-eta',0.002,'learning rate')
 cmd:option('-etadecay',0.1,'learning rate decay')
 cmd:option('-etadecayinterval',10000,'learning rate decay interval')
-cmd:option('-maxiter',1000000,'max number of updates')
-cmd:option('-statinterval',5000,'interval for saving stats and models')
+cmd:option('-maxiter',1000,'max number of updates')
+cmd:option('-statinterval',50,'interval for saving stats and models')
 cmd:option('-v', false, 'be verbose')
 cmd:option('-wcar', '', 'additional flag to differentiate this run')
 cmd:option('-openmp',false,'Use OpenMP')
 cmd:option('-nThread',1,'Number of threads for openmp')
 cmd:option('-hessian',true,'Compute Diagonal Hessian Approximation')
-cmd:option('-hessianinterval',10000,'Compute Diagonal Hessian Approximation at every this many samples')
+cmd:option('-hessianinterval',100,'Compute Diagonal Hessian Approximation at every this many samples')
 cmd:option('-minhessian',0.02,'Min hessian to avoid extreme speed up')
 cmd:option('-maxhessian',500,'Max hessian to avoid extreme slow down')
 cmd:option('-linear',false,'Train a linear model')
@@ -57,7 +57,7 @@ if params.linear then
   params.inputsize = params.kernelsize
 end
 
-data = getdata(params.data, params.inputsize)
+data = getdata(params.inputsize)
 
 local rundir = cmd:string('psd', params, {dir=true,lambda=false,encoderType=false,kernelsize=false})
 params.rundir = paths.concat(params.dir,rundir)
@@ -74,7 +74,7 @@ cmd:log(paths.concat(params.rundir, 'log'), params)
 torch.manualSeed(params.seed)
 
 -- create the dataset
-data = getdata(params.data,params.inputsize)--imutils.mapdata(params.data)
+data = getdata(params.inputsize)--imutils.mapdata(params.data)
 data:conv()
 
 local ex = data[1][1]

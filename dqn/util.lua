@@ -22,7 +22,7 @@ function parse_options()
    cmd:option('-name', 'ecn_breakout_FULL_Y', 'filename used for saving network and training history')
    cmd:option('-network', '"convnet_atari3"', 'reload pretrained network')
    cmd:option('-agent', 'NeuralQLearner', 'name of agent file to use')
-   cmd:option('-agent_params', 'lr=0.00025,ep=1,ep_end=0.1,ep_endt=replay_memory,discount=0.99,hist_len=3,learn_start=3000,replay_memory=1000000,update_freq=4,n_replay=1,network="convnet_atari3",preproc="net_downsample_2x_full_y",state_dim=7056,minibatch_size=32,rescale_r=1,ncols=1,bufferSize=512,valid_size=500,target_q=10000,clip_delta=1,min_reward=-1,max_reward=1', 'string of agent parameters')
+   cmd:option('-agent_params', 'lr=0.00025,ep=1,ep_end=0.1,ep_endt=replay_memory,discount=0.99,hist_len=3,learn_start=10000,replay_memory=1000000,update_freq=4,n_replay=1,network="convnet_atari3",preproc="net_downsample_2x_full_y",state_dim=7056,minibatch_size=32,rescale_r=1,ncols=1,bufferSize=512,valid_size=500,target_q=10000,clip_delta=1,min_reward=-1,max_reward=1', 'string of agent parameters')
    cmd:option('-seed', 1, 'fixed input seed for repeatable experiments')
    cmd:option('-saveNetworkParams', true,
 	      'saves the agent network in a separate file')
@@ -307,24 +307,14 @@ end
 
 
 function collect_data(n)
-  num_steps = n or agent.learn_start
-  step=0
+  num_steps = n   step=0
   print("Collecting " .. num_steps .. " images.")
+  collect = torch.CudaTensor(n,210,160)
 
   -- For debugging
   w, dw = agent.network:getParameters()
   for i=1,num_steps do
-    if (i < agent.learn_start) then
-      xlua.progress(i, agent.learn_start)
-    else
-      xlua.progress(i, num_steps)
-    end
-    if (i > agent.learn_start) then
-      --w, dw = agent.network:getParameters()
-      --print("At step " .. i .. " we have w, dw with sums of " .. w:sum() .. " " .. dw:sum())
-      --cw, cdw = agent.network.convnet:getParameters()
-      --print("At step " .. i .. " we have w, dw,  and convw, convdw with sums of "  .. cw:sum() .. " " .. cdw:sum())
-    end
+    xlua.progress(i, num_steps)
     step = step + 1
     old_screen = screen
     action_index = agent:perceive(reward, screen, terminal)
@@ -340,6 +330,8 @@ function collect_data(n)
       end
     end
 
+    collect[i] = screen[1][1]
+
     -- display screen
     if full_display then
       win = image.display({image=screen, win=win})
@@ -350,6 +342,7 @@ function collect_data(n)
       --weight_win = display_ongoing_weights(agent, old_screen)
     end
   end
+  return collect
 end
 
 

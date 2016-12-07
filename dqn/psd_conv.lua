@@ -30,10 +30,10 @@ cmd:option('-etadecay',0.1,'learning rate decay')
 cmd:option('-etadecayinterval',10000,'learning rate decay interval')
 cmd:option('-maxiter',1000,'max number of updates')
 cmd:option('-statinterval',50,'interval for saving stats and models')
-cmd:option('-v', false, 'be verbose')
+cmd:option('-v', true, 'be verbose')
 cmd:option('-wcar', '', 'additional flag to differentiate this run')
-cmd:option('-openmp',false,'Use OpenMP')
-cmd:option('-nThread',1,'Number of threads for openmp')
+cmd:option('-openmp',true,'Use OpenMP')
+cmd:option('-nThread',4,'Number of threads for openmp')
 cmd:option('-hessian',true,'Compute Diagonal Hessian Approximation')
 cmd:option('-hessianinterval',100,'Compute Diagonal Hessian Approximation at every this many samples')
 cmd:option('-minhessian',0.02,'Min hessian to avoid extreme speed up')
@@ -49,15 +49,13 @@ end
 nn.hessian.enable()
 
 if params.openmp or params.nThread > 1 then
-  torch.setDefaultNumThreads(params.nThread)
+  torch.setnumthreads(params.nThread)
   print('Using OpenMP')
 end
 
 if params.linear then
   params.inputsize = params.kernelsize
 end
-
-data = getdata(params.inputsize)
 
 local rundir = cmd:string('psd', params, {dir=true,lambda=false,encoderType=false,kernelsize=false})
 params.rundir = paths.concat(params.dir,rundir)

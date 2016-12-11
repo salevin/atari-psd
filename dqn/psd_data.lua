@@ -2,10 +2,10 @@ require 'util'
 
 local data_verbose = false
 
-function getdata(inputsize, std)
+function getdata(images, std)
 
   init()
-  local data = collect_data(5000)
+  local data = collect_data(images or 5000)
 
   local dataset ={}
 
@@ -45,14 +45,14 @@ function getdata(inputsize, std)
     end
   end
 
-  local dsample = torch.Tensor(inputsize*inputsize)
+  local dsample = torch.Tensor(nrows*ncols)
 
   function dataset:conv()
-    dsample = torch.Tensor(1,inputsize,inputsize)
+    dsample = torch.Tensor(1,nrows,ncols)
   end
 
   setmetatable(dataset, {__index = function(self, index)
-    local sample,i,im = self:selectPatch(inputsize, inputsize)
+    local sample,i,im = self:selectPatch(nrows, ncols)
     dsample:copy(sample)
     return {dsample,dsample,im}
   end})
@@ -190,9 +190,9 @@ function getdatacam(inputsize, std)
     end
   end
 
-  local dsample = torch.Tensor(inputsize*inputsize)
+  local dsample = torch.Tensor(nrows*ncols)
   setmetatable(dataset, {__index = function(self, index)
-    local sample,i,im,img,imc = self:selectPatch(inputsize, inputsize)
+    local sample,i,im,img,imc = self:selectPatch(nrows, ncols)
     dsample:copy(sample)
     return {dsample,dsample,im,img,imc}
   end})

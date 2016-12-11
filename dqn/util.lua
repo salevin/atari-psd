@@ -1,5 +1,5 @@
 require "xlua"
-require "initenv.lua"
+require "initenv"
 
 
 function parse_options()

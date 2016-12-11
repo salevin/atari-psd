@@ -1,0 +1,573 @@
+2016-12-08 21:30:10[psd]:  [program started on Thu Dec  8 21:30:10 2016] 
+2016-12-08 21:30:10[psd]:  [command line arguments] 
+2016-12-08 21:30:10[psd]:  linear false 
+2016-12-08 21:30:10[psd]:  conntable  
+2016-12-08 21:30:10[psd]:  encoderType tanh 
+2016-12-08 21:30:10[psd]:  rundir /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1 
+2016-12-08 21:30:10[psd]:  minhessian 0.001 
+2016-12-08 21:30:10[psd]:  nThread 8 
+2016-12-08 21:30:10[psd]:  hessian true 
+2016-12-08 21:30:10[psd]:  beta 1 
+2016-12-08 21:30:10[psd]:  maxhessian 500 
+2016-12-08 21:30:10[psd]:  nfiltersout 16 
+2016-12-08 21:30:10[psd]:  nfiltersin 1 
+2016-12-08 21:30:10[psd]:  v false 
+2016-12-08 21:30:10[psd]:  statinterval 50 
+2016-12-08 21:30:10[psd]:  hessianinterval 100 
+2016-12-08 21:30:10[psd]:  etadecayinterval 10000 
+2016-12-08 21:30:10[psd]:  eta 0.002 
+2016-12-08 21:30:10[psd]:  etadecay 0.1 
+2016-12-08 21:30:10[psd]:  maxiter 10000 
+2016-12-08 21:30:10[psd]:  dir outputs.psd 
+2016-12-08 21:30:10[psd]:  openmp true 
+2016-12-08 21:30:10[psd]:  seed 123211 
+2016-12-08 21:30:10[psd]:  kernelsize 9 
+2016-12-08 21:30:10[psd]:  wcar  
+2016-12-08 21:30:10[psd]:  lambda 1 
+2016-12-08 21:30:10[psd]:  [----------------------] 
+2016-12-08 21:30:10[psd]:  Torch Threads: 1 
+2016-12-08 21:30:13[psd]:  Using GPU device id: 0 
+2016-12-08 21:30:13[psd]:  Torch Seed: 1 
+2016-12-08 21:30:13[psd]:  CUTorch Seed: 1791095845 
+2016-12-08 21:30:13[psd]:  
+Playing: breakout 
+2016-12-08 21:30:13[psd]:  args.eta, self.eta are  nil 0.1 
+2016-12-08 21:30:13[psd]:  args.minibatch_size, self.minibatch_size are  32 32 
+2016-12-08 21:30:13[psd]:  self_start, etc are:  nil 2000 10000 
+2016-12-08 21:30:13[psd]:  Initializing ecn with args:  
+2016-12-08 21:30:13[psd]:  target_q 10000 
+2016-12-08 21:30:13[psd]:  ncols 1 
+2016-12-08 21:30:13[psd]:  replay_memory 1000000 
+2016-12-08 21:30:13[psd]:  min_reward -1 
+2016-12-08 21:30:13[psd]:  discount 0.99 
+2016-12-08 21:30:13[psd]:  learn_start 10000 
+2016-12-08 21:30:13[psd]:  hist_len 3 
+2016-12-08 21:30:13[psd]:  ep 1 
+2016-12-08 21:30:13[psd]:  network "convnet_atari3" 
+2016-12-08 21:30:13[psd]:  max_reward 1 
+2016-12-08 21:30:13[psd]:  gpu 0 
+2016-12-08 21:30:13[psd]:  n_replay 1 
+2016-12-08 21:30:13[psd]:  input_dims table: 0x41adb8b0 
+2016-12-08 21:30:13[psd]:  verbose 2 
+2016-12-08 21:30:13[psd]:  actions table: 0x41ad7a90 
+2016-12-08 21:30:13[psd]:  clip_delta 1 
+2016-12-08 21:30:13[psd]:  valid_size 500 
+2016-12-08 21:30:13[psd]:  lr 0.00025 
+2016-12-08 21:30:13[psd]:  preproc net_downsample_2x_full_y 
+2016-12-08 21:30:13[psd]:  bufferSize 512 
+2016-12-08 21:30:13[psd]:  update_freq 4 
+2016-12-08 21:30:13[psd]:  minibatch_size 32 
+2016-12-08 21:30:13[psd]:  rescale_r 1 
+2016-12-08 21:30:13[psd]:  state_dim 7056 
+2016-12-08 21:30:13[psd]:  ep_end 0.1 
+2016-12-08 21:30:13[psd]:  ECN input size is  21172 
+2016-12-08 21:30:13[psd]:  nn.Sequential {
+  [input -> (1) -> (2) -> (3) -> (4) -> output]
+  (1): nn.Reshape(392)
+  (2): nn.Linear(392 -> 512)
+  (3): nn.Rectifier
+  (4): nn.Linear(512 -> 4)
+} 
+2016-12-08 21:30:13[psd]:  Convolutional layers flattened output size: 392 
+2016-12-08 21:30:13[psd]:  Here is the main network: 
+2016-12-08 21:30:13[psd]:  nn.Concat {
+  input
+    |`-> (1): nn.Sequential {
+    |      [input -> (1) -> (2) -> output]
+    |      (1): nn.Narrow
+    |      (2): nn.Sequential {
+    |        [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> (7) -> output]
+    |        (1): nn.Reshape(3x84x84)
+    |        (2): nn.SpatialConvolution(3 -> 32, 8x8, 4,4, 1,1)
+    |        (3): nn.Rectifier
+    |        (4): nn.SpatialConvolution(32 -> 64, 4x4, 2,2)
+    |        (5): nn.Rectifier
+    |        (6): nn.SpatialConvolution(64 -> 8, 3x3)
+    |        (7): nn.Rectifier
+    |      }
+    |    }
+     `-> (2): nn.Sequential {
+           [input -> (1) -> (2) -> output]
+           (1): nn.Narrow
+           (2): nn.Sequential {
+             [input -> (1) -> (2) -> (3) -> (4) -> (5) -> output]
+             (1): nn.Linear(7060 -> 512)
+             (2): nn.Tanh
+             (3): nn.Linear(512 -> 49)
+             (4): nn.Tanh
+             (5): nn.Reshape(1x7x7)
+           }
+         }
+     ... -> output
+} 
+2016-12-08 21:30:13[psd]:  The pred_training_network 
+2016-12-08 21:30:13[psd]:  nn.Concat {
+  input
+    |`-> (1): nn.Sequential {
+    |      [input -> (1) -> (2) -> output]
+    |      (1): nn.Narrow
+    |      (2): nn.Sequential {
+    |        [input -> (1) -> (2) -> (3) -> (4) -> (5) -> output]
+    |        (1): nn.Linear(7060 -> 512)
+    |        (2): nn.Tanh
+    |        (3): nn.Linear(512 -> 49)
+    |        (4): nn.Tanh
+    |        (5): nn.Reshape(1x7x7)
+    |      }
+    |    }
+     `-> (2): nn.Sequential {
+           [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> output]
+           (1): nn.Narrow
+           (2): nn.Narrow
+           (3): nn.Padding
+           (4): nn.Sequential {
+             [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> (7) -> output]
+             (1): nn.Reshape(3x84x84)
+             (2): nn.SpatialConvolution(3 -> 32, 8x8, 4,4, 1,1)
+             (3): nn.Rectifier
+             (4): nn.SpatialConvolution(32 -> 64, 4x4, 2,2)
+             (5): nn.Rectifier
+             (6): nn.SpatialConvolution(64 -> 8, 3x3)
+             (7): nn.Rectifier
+           }
+           (5): nn.Select
+           (6): nn.Reshape(1x7x7)
+         }
+     ... -> output
+} 
+2016-12-08 21:30:13[psd]:  Output size from pred_training_network is   32
+  2
+  7
+  7
+[torch.LongStorage of size 4]
+ 
+2016-12-08 21:30:13[psd]:  dC, dP sizes are   32
+  1
+  7
+  7
+[torch.LongStorage of size 4]
+  32
+  1
+  7
+  7
+[torch.LongStorage of size 4]
+ 
+2016-12-08 21:30:13[psd]:  Hier netwwork nn.Sequential {
+  [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> output]
+  (1): nn.Narrow
+  (2): nn.Narrow
+  (3): nn.Padding
+  (4): nn.Sequential {
+    [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> (7) -> output]
+    (1): nn.Reshape(3x84x84)
+    (2): nn.SpatialConvolution(3 -> 32, 8x8, 4,4, 1,1)
+    (3): nn.Rectifier
+    (4): nn.SpatialConvolution(32 -> 64, 4x4, 2,2)
+    (5): nn.Rectifier
+    (6): nn.SpatialConvolution(64 -> 8, 3x3)
+    (7): nn.Rectifier
+  }
+  (5): nn.Select
+  (6): nn.Reshape(1x7x7)
+} 
+2016-12-08 21:30:13[psd]:  Hier network output size is   32
+  1
+  7
+  7
+[torch.LongStorage of size 4]
+ 
+2016-12-08 21:30:13[psd]:  Went backward through pred_training_network successfully. 
+2016-12-08 21:30:13[psd]:  The final network 
+2016-12-08 21:30:13[psd]:  nn.Sequential {
+  [input -> (1) -> (2) -> output]
+  (1): nn.Concat {
+    input
+      |`-> (1): nn.Sequential {
+      |      [input -> (1) -> (2) -> output]
+      |      (1): nn.Narrow
+      |      (2): nn.Sequential {
+      |        [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> (7) -> output]
+      |        (1): nn.Reshape(3x84x84)
+      |        (2): nn.SpatialConvolution(3 -> 32, 8x8, 4,4, 1,1)
+      |        (3): nn.Rectifier
+      |        (4): nn.SpatialConvolution(32 -> 64, 4x4, 2,2)
+      |        (5): nn.Rectifier
+      |        (6): nn.SpatialConvolution(64 -> 8, 3x3)
+      |        (7): nn.Rectifier
+      |      }
+      |    }
+       `-> (2): nn.Sequential {
+             [input -> (1) -> (2) -> output]
+             (1): nn.Narrow
+             (2): nn.Sequential {
+               [input -> (1) -> (2) -> (3) -> (4) -> (5) -> output]
+               (1): nn.Linear(7060 -> 512)
+               (2): nn.Tanh
+               (3): nn.Linear(512 -> 49)
+               (4): nn.Tanh
+               (5): nn.Reshape(1x7x7)
+             }
+           }
+       ... -> output
+  }
+  (2): nn.Sequential {
+    [input -> (1) -> (2) -> output]
+    (1): nn.Narrow
+    (2): nn.Sequential {
+      [input -> (1) -> (2) -> (3) -> (4) -> output]
+      (1): nn.Reshape(392)
+      (2): nn.Linear(392 -> 512)
+      (3): nn.Rectifier
+      (4): nn.Linear(512 -> 4)
+    }
+  }
+} 
+2016-12-08 21:30:13[psd]:  CUDAfied network 
+2016-12-08 21:30:13[psd]:  Testing forward pass. 
+2016-12-08 21:30:13[psd]:  Forward output size is   32
+  4
+[torch.LongStorage of size 2]
+ 
+2016-12-08 21:30:13[psd]:  Testing backward pass. 
+2016-12-08 21:30:14[psd]:  Printing network. 
+2016-12-08 21:30:14[psd]:  dqn.ecn 
+2016-12-08 21:30:17[psd]:  Set up Torch using these options: 
+2016-12-08 21:30:17[psd]:  eval_steps 100000 
+2016-12-08 21:30:17[psd]:  seed 1 
+2016-12-08 21:30:17[psd]:  name ecn_breakout_FULL_Y 
+2016-12-08 21:30:17[psd]:  verbose 2 
+2016-12-08 21:30:17[psd]:  network "convnet_atari3" 
+2016-12-08 21:30:17[psd]:  reload  
+2016-12-08 21:30:17[psd]:  pool_frms table: 0x410c9720 
+2016-12-08 21:30:17[psd]:  saveNetworkParams true 
+2016-12-08 21:30:17[psd]:  full_display false 
+2016-12-08 21:30:17[psd]:  gpu 1 
+2016-12-08 21:30:17[psd]:  eval_freq 10000 
+2016-12-08 21:30:17[psd]:  tensorType torch.FloatTensor 
+2016-12-08 21:30:17[psd]:  env_params table: 0x410ccbc8 
+2016-12-08 21:30:17[psd]:  steps 100000 
+2016-12-08 21:30:17[psd]:  prog_freq 5000 
+2016-12-08 21:30:17[psd]:  agent_params table: 0x41c67268 
+2016-12-08 21:30:17[psd]:  actrep 4 
+2016-12-08 21:30:17[psd]:  framework alewrap 
+2016-12-08 21:30:17[psd]:  agent NeuralQLearner 
+2016-12-08 21:30:17[psd]:  threads 1 
+2016-12-08 21:30:17[psd]:  save_versions 0 
+2016-12-08 21:30:17[psd]:  random_starts 30 
+2016-12-08 21:30:17[psd]:  game_path ../roms/ 
+2016-12-08 21:30:17[psd]:  save_freq 50000 
+2016-12-08 21:30:17[psd]:  env breakout 
+2016-12-08 21:30:17[psd]:  Collecting 5000 images. 
+2016-12-08 21:30:58[psd]:  Convolutional psd 
+2016-12-08 21:30:58[psd]:  Starting Training 
+2016-12-08 21:30:58[psd]:  Computing Hessian 
+2016-12-08 21:30:58[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 21:34:32[psd]:  ddeltax : min/max = 0/60847.0234375 
+2016-12-08 21:34:32[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 21:34:32[psd]:  done 
+2016-12-08 21:34:32[psd]:  oops large dx 8963.7919921875 -9312.5478515625 
+2016-12-08 21:34:36[psd]:  oops large dx 4016.2802734375 -6753.0654296875 
+2016-12-08 21:34:36[psd]:  oops large dx 4983.9375 -4416.5825195312 
+2016-12-08 21:34:37[psd]:  oops large dx 2631.8872070312 -4289.7958984375 
+2016-12-08 21:34:38[psd]:  oops large dx 3198.353515625 -2746.1450195312 
+2016-12-08 21:34:38[psd]:  oops large dx 1740.8269042969 -2820.0922851562 
+2016-12-08 21:34:38[psd]:  oops large dx 2086.8696289062 -2105.443359375 
+2016-12-08 21:34:39[psd]:  oops large dx 1179.0090332031 -1889.1529541016 
+2016-12-08 21:34:39[psd]:  oops large dx 1402.5053710938 -1487.3391113281 
+2016-12-08 21:34:39[psd]:  oops large dx 797.93804931641 -1377.3420410156 
+2016-12-08 21:34:40[psd]:  oops large dx 939.16906738281 -1182.0323486328 
+2016-12-08 21:34:40[psd]:  oops large dx 547.25140380859 -1000.921875 
+2016-12-08 21:34:40[psd]:  oops large dx 644.01129150391 -896.39660644531 
+2016-12-08 21:34:40[psd]:  oops large dx 375.80163574219 -750.32775878906 
+2016-12-08 21:34:41[psd]:  oops large dx 444.87606811523 -656.85406494141 
+2016-12-08 21:34:41[psd]:  oops large dx 261.41061401367 -543.46252441406 
+2016-12-08 21:34:41[psd]:  oops large dx 309.3798828125 -509.52947998047 
+2016-12-08 21:34:42[psd]:  oops large dx 222.28610229492 -412.21801757812 
+2016-12-08 21:34:42[psd]:  oops large dx 220.93525695801 -354.53582763672 
+2016-12-08 21:34:42[psd]:  oops large dx 198.8299407959 -323.93402099609 
+2016-12-08 21:34:43[psd]:  oops large dx 202.09379577637 -309.28002929688 
+2016-12-08 21:34:43[psd]:  oops large dx 184.36456298828 -213.63110351562 
+2016-12-08 21:34:43[psd]:  oops large dx 189.93101501465 -224.12493896484 
+2016-12-08 21:34:43[psd]:  oops large dx 192.30975341797 -208.99545288086 
+2016-12-08 21:34:44[psd]:  oops large dx 182.00170898438 -197.13714599609 
+2016-12-08 21:34:44[psd]:  oops large dx 176.85945129395 -192.63612365723 
+2016-12-08 21:34:44[psd]:  oops large dx 172.64094543457 -181.07482910156 
+2016-12-08 21:34:45[psd]:  oops large dx 170.16851806641 -178.6177520752 
+2016-12-08 21:34:45[psd]:  oops large dx 162.09405517578 -166.03536987305 
+2016-12-08 21:34:45[psd]:  oops large dx 163.68524169922 -167.78894042969 
+2016-12-08 21:34:46[psd]:  oops large dx 162.35652160645 -165.73159790039 
+2016-12-08 21:34:46[psd]:  oops large dx 152.54635620117 -158.60191345215 
+2016-12-08 21:34:46[psd]:  oops large dx 155.15577697754 -152.72660827637 
+2016-12-08 21:34:46[psd]:  oops large dx 144.15461730957 -147.29681396484 
+2016-12-08 21:34:47[psd]:  oops large dx 143.02409362793 -140.58293151855 
+2016-12-08 21:34:47[psd]:  oops large dx 142.0846862793 -139.01844787598 
+2016-12-08 21:34:47[psd]:  oops large dx 139.50238037109 -132.30717468262 
+2016-12-08 21:34:48[psd]:  oops large dx 137.73004150391 -136.5973815918 
+2016-12-08 21:34:48[psd]:  oops large dx 132.76838684082 -125.7127532959 
+2016-12-08 21:34:48[psd]:  oops large dx 126.41422271729 -120.95979309082 
+2016-12-08 21:34:49[psd]:  oops large dx 128.23539733887 -118.5417098999 
+2016-12-08 21:34:49[psd]:  oops large dx 124.98043823242 -117.84043884277 
+2016-12-08 21:34:49[psd]:  oops large dx 129.97428894043 -116.7844619751 
+2016-12-08 21:34:49[psd]:  oops large dx 117.96657562256 -108.52549743652 
+2016-12-08 21:34:50[psd]:  oops large dx 125.53898620605 -110.44508361816 
+2016-12-08 21:34:50[psd]:  oops large dx 120.1307220459 -108.00688934326 
+2016-12-08 21:34:50[psd]:  oops large dx 113.76020812988 -101.16352081299 
+2016-12-08 21:34:51[psd]:  oops large dx 108.32541656494 -94.634376525879 
+2016-12-08 21:34:51[psd]:  oops large dx 109.11811065674 -99.631332397461 
+2016-12-08 21:34:51[psd]:  oops large dx 105.76789855957 -98.404289245605 
+2016-12-08 21:34:58[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 21:34:58[psd]:  # iter= 50 eta= 0.002 current error= 121983.03067297 
+2016-12-08 21:34:59[psd]:  oops large dx 102.35771179199 -100.00168609619 
+2016-12-08 21:34:59[psd]:  oops large dx 100.43984222412 -98.559501647949 
+2016-12-08 21:34:59[psd]:  oops large dx 106.69464874268 -97.971466064453 
+2016-12-08 21:35:00[psd]:  oops large dx 100.36421966553 -91.242065429688 
+2016-12-08 21:35:20[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 21:35:21[psd]:  # iter= 100 eta= 0.0019990004997501 current error= 72223.30847168 
+2016-12-08 21:35:21[psd]:  Computing Hessian 
+2016-12-08 21:35:21[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 21:39:15[psd]:  ddeltax : min/max = 0/57295.9921875 
+2016-12-08 21:39:15[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 21:39:15[psd]:  done 
+2016-12-08 21:39:37[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 21:39:37[psd]:  # iter= 150 eta= 0.001998001998002 current error= 66102.934814453 
+2016-12-08 21:39:59[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 21:39:59[psd]:  # iter= 200 eta= 0.0019970044932601 current error= 62728.290603638 
+2016-12-08 21:39:59[psd]:  Computing Hessian 
+2016-12-08 21:39:59[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 21:43:54[psd]:  ddeltax : min/max = 0/42355.70703125 
+2016-12-08 21:43:54[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 21:43:54[psd]:  done 
+2016-12-08 21:44:15[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 21:44:16[psd]:  # iter= 250 eta= 0.0019960079840319 current error= 60730.787986755 
+2016-12-08 21:44:38[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 21:44:38[psd]:  # iter= 300 eta= 0.0019950124688279 current error= 59453.358737946 
+2016-12-08 21:44:38[psd]:  Computing Hessian 
+2016-12-08 21:44:38[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 21:48:32[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 21:48:32[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 21:48:32[psd]:  done 
+2016-12-08 21:48:54[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 21:48:54[psd]:  # iter= 350 eta= 0.0019940179461615 current error= 58616.503204346 
+2016-12-08 21:49:16[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 21:49:17[psd]:  # iter= 400 eta= 0.0019930244145491 current error= 58101.298826218 
+2016-12-08 21:49:17[psd]:  Computing Hessian 
+2016-12-08 21:49:17[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 21:53:11[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 21:53:11[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 21:53:11[psd]:  done 
+2016-12-08 21:53:33[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 21:53:33[psd]:  # iter= 450 eta= 0.00199203187251 current error= 57702.517030716 
+2016-12-08 21:53:55[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 21:53:56[psd]:  # iter= 500 eta= 0.0019910403185665 current error= 57357.792915344 
+2016-12-08 21:53:56[psd]:  Computing Hessian 
+2016-12-08 21:53:56[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 21:57:50[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 21:57:50[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 21:57:50[psd]:  done 
+2016-12-08 21:58:12[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 21:58:12[psd]:  # iter= 550 eta= 0.0019900497512438 current error= 57065.107367516 
+2016-12-08 21:58:34[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 21:58:34[psd]:  # iter= 600 eta= 0.0019890601690701 current error= 56847.112543106 
+2016-12-08 21:58:34[psd]:  Computing Hessian 
+2016-12-08 21:58:34[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 22:02:29[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 22:02:29[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 22:02:29[psd]:  done 
+2016-12-08 22:02:51[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:02:51[psd]:  # iter= 650 eta= 0.0019880715705765 current error= 56686.168840408 
+2016-12-08 22:03:13[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:03:13[psd]:  # iter= 700 eta= 0.0019870839542971 current error= 56612.647553444 
+2016-12-08 22:03:13[psd]:  Computing Hessian 
+2016-12-08 22:03:13[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 22:07:08[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 22:07:08[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 22:07:08[psd]:  done 
+2016-12-08 22:07:29[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:07:30[psd]:  # iter= 750 eta= 0.0019860973187686 current error= 56503.991422653 
+2016-12-08 22:07:52[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:07:52[psd]:  # iter= 800 eta= 0.001985111662531 current error= 56424.471824169 
+2016-12-08 22:07:52[psd]:  Computing Hessian 
+2016-12-08 22:07:52[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 22:11:47[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 22:11:47[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 22:11:47[psd]:  done 
+2016-12-08 22:12:01[psd]:  oops large dx 116.76094818115 -1.1706328392029 
+2016-12-08 22:12:09[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:12:09[psd]:  # iter= 850 eta= 0.001984126984127 current error= 56347.678164482 
+2016-12-08 22:12:31[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:12:32[psd]:  # iter= 900 eta= 0.0019831432821021 current error= 56339.108120918 
+2016-12-08 22:12:32[psd]:  Computing Hessian 
+2016-12-08 22:12:32[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 22:16:26[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 22:16:26[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 22:16:26[psd]:  done 
+2016-12-08 22:16:47[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:16:48[psd]:  # iter= 950 eta= 0.001982160555005 current error= 56257.769502163 
+2016-12-08 22:17:10[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:17:10[psd]:  # iter= 1000 eta= 0.0019811788013868 current error= 56194.141067505 
+2016-12-08 22:17:10[psd]:  Computing Hessian 
+2016-12-08 22:17:10[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 22:21:05[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 22:21:05[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 22:21:05[psd]:  done 
+2016-12-08 22:21:27[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:21:28[psd]:  # iter= 1050 eta= 0.001980198019802 current error= 56209.111340761 
+2016-12-08 22:21:49[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:21:50[psd]:  # iter= 1100 eta= 0.0019792182088075 current error= 56181.072266698 
+2016-12-08 22:21:50[psd]:  Computing Hessian 
+2016-12-08 22:21:50[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 22:25:45[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 22:25:45[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 22:25:45[psd]:  done 
+2016-12-08 22:26:07[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:26:07[psd]:  # iter= 1150 eta= 0.0019782393669634 current error= 56164.813303828 
+2016-12-08 22:26:29[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:26:30[psd]:  # iter= 1200 eta= 0.0019772614928324 current error= 56139.05113256 
+2016-12-08 22:26:30[psd]:  Computing Hessian 
+2016-12-08 22:26:30[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 22:30:24[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 22:30:24[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 22:30:24[psd]:  done 
+2016-12-08 22:30:45[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:30:46[psd]:  # iter= 1250 eta= 0.0019762845849802 current error= 56125.607517302 
+2016-12-08 22:30:58[psd]:  oops large dx 112.77088928223 -0.19031295180321 
+2016-12-08 22:31:08[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:31:08[psd]:  # iter= 1300 eta= 0.0019753086419753 current error= 56187.566959679 
+2016-12-08 22:31:08[psd]:  Computing Hessian 
+2016-12-08 22:31:08[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 22:35:02[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 22:35:02[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 22:35:02[psd]:  done 
+2016-12-08 22:35:23[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:35:24[psd]:  # iter= 1350 eta= 0.0019743336623889 current error= 56141.704523742 
+2016-12-08 22:35:46[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:35:46[psd]:  # iter= 1400 eta= 0.0019733596447953 current error= 56137.227413505 
+2016-12-08 22:35:46[psd]:  Computing Hessian 
+2016-12-08 22:35:46[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 22:39:41[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 22:39:41[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 22:39:41[psd]:  done 
+2016-12-08 22:40:02[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:40:03[psd]:  # iter= 1450 eta= 0.0019723865877712 current error= 56177.859130979 
+2016-12-08 22:40:24[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:40:25[psd]:  # iter= 1500 eta= 0.0019714144898965 current error= 56151.285551429 
+2016-12-08 22:40:25[psd]:  Computing Hessian 
+2016-12-08 22:40:25[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 22:44:19[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 22:44:19[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 22:44:19[psd]:  done 
+2016-12-08 22:44:41[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:44:41[psd]:  # iter= 1550 eta= 0.0019704433497537 current error= 56082.389570802 
+2016-12-08 22:45:03[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:45:03[psd]:  # iter= 1600 eta= 0.0019694731659281 current error= 56096.67109184 
+2016-12-08 22:45:03[psd]:  Computing Hessian 
+2016-12-08 22:45:03[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 22:48:58[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 22:48:58[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 22:48:58[psd]:  done 
+2016-12-08 22:49:19[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:49:20[psd]:  # iter= 1650 eta= 0.0019685039370079 current error= 56109.103600249 
+2016-12-08 22:49:42[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:49:42[psd]:  # iter= 1700 eta= 0.0019675356615839 current error= 56056.271645263 
+2016-12-08 22:49:42[psd]:  Computing Hessian 
+2016-12-08 22:49:42[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 22:53:37[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 22:53:37[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 22:53:37[psd]:  done 
+2016-12-08 22:53:59[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:53:59[psd]:  # iter= 1750 eta= 0.0019665683382498 current error= 56056.722292237 
+2016-12-08 22:54:21[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:54:22[psd]:  # iter= 1800 eta= 0.001965601965602 current error= 56083.196403645 
+2016-12-08 22:54:22[psd]:  Computing Hessian 
+2016-12-08 22:54:22[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 22:58:16[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 22:58:16[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 22:58:16[psd]:  done 
+2016-12-08 22:58:37[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:58:38[psd]:  # iter= 1850 eta= 0.0019646365422397 current error= 56125.154777654 
+2016-12-08 22:58:59[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 22:58:59[psd]:  # iter= 1900 eta= 0.0019636720667649 current error= 56084.038291384 
+2016-12-08 22:58:59[psd]:  Computing Hessian 
+2016-12-08 22:58:59[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 23:02:53[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 23:02:53[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 23:02:53[psd]:  done 
+2016-12-08 23:03:15[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:03:16[psd]:  # iter= 1950 eta= 0.0019627085377821 current error= 56123.331175845 
+2016-12-08 23:03:38[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:03:38[psd]:  # iter= 2000 eta= 0.001961745953899 current error= 56103.99907295 
+2016-12-08 23:03:38[psd]:  Computing Hessian 
+2016-12-08 23:03:38[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 23:07:32[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 23:07:32[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 23:07:32[psd]:  done 
+2016-12-08 23:07:41[psd]:  oops large dx 104.54009246826 -0.0093924840912223 
+2016-12-08 23:07:53[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:07:54[psd]:  # iter= 2050 eta= 0.0019607843137255 current error= 56061.989884749 
+2016-12-08 23:08:16[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:08:16[psd]:  # iter= 2100 eta= 0.0019598236158746 current error= 56112.154249111 
+2016-12-08 23:08:16[psd]:  Computing Hessian 
+2016-12-08 23:08:16[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 23:12:10[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 23:12:10[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 23:12:10[psd]:  done 
+2016-12-08 23:12:32[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:12:33[psd]:  # iter= 2150 eta= 0.0019588638589618 current error= 56068.642717488 
+2016-12-08 23:12:55[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:12:55[psd]:  # iter= 2200 eta= 0.0019579050416055 current error= 56078.14286512 
+2016-12-08 23:12:55[psd]:  Computing Hessian 
+2016-12-08 23:12:55[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 23:16:49[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 23:16:49[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 23:16:49[psd]:  done 
+2016-12-08 23:17:11[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:17:11[psd]:  # iter= 2250 eta= 0.0019569471624266 current error= 56052.788213493 
+2016-12-08 23:17:33[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:17:34[psd]:  # iter= 2300 eta= 0.0019559902200489 current error= 56036.501186948 
+2016-12-08 23:17:34[psd]:  Computing Hessian 
+2016-12-08 23:17:34[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 23:21:29[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 23:21:29[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 23:21:29[psd]:  done 
+2016-12-08 23:21:51[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:21:52[psd]:  # iter= 2350 eta= 0.0019550342130987 current error= 56024.872520262 
+2016-12-08 23:22:13[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:22:14[psd]:  # iter= 2400 eta= 0.0019540791402052 current error= 56112.807512921 
+2016-12-08 23:22:14[psd]:  Computing Hessian 
+2016-12-08 23:22:14[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 23:26:07[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 23:26:07[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 23:26:07[psd]:  done 
+2016-12-08 23:26:29[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:26:30[psd]:  # iter= 2450 eta= 0.001953125 current error= 56101.788618913 
+2016-12-08 23:26:51[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:26:52[psd]:  # iter= 2500 eta= 0.0019521717911176 current error= 56060.234803775 
+2016-12-08 23:26:52[psd]:  Computing Hessian 
+2016-12-08 23:26:52[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 23:30:47[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 23:30:47[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 23:30:47[psd]:  done 
+2016-12-08 23:31:09[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:31:10[psd]:  # iter= 2550 eta= 0.0019512195121951 current error= 56095.554022914 
+2016-12-08 23:31:31[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:31:32[psd]:  # iter= 2600 eta= 0.0019502681618723 current error= 56104.871380308 
+2016-12-08 23:31:32[psd]:  Computing Hessian 
+2016-12-08 23:31:32[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 23:35:26[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 23:35:26[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 23:35:26[psd]:  done 
+2016-12-08 23:35:48[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:35:48[psd]:  # iter= 2650 eta= 0.0019493177387914 current error= 56066.718684951 
+2016-12-08 23:36:10[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:36:10[psd]:  # iter= 2700 eta= 0.0019483682415977 current error= 56063.302138831 
+2016-12-08 23:36:10[psd]:  Computing Hessian 
+2016-12-08 23:36:10[psd]:  Min Hessian=0.001 Max Hessian=500 
+2016-12-08 23:40:05[psd]:  ddeltax : min/max = 0/33599.8359375 
+2016-12-08 23:40:05[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2016-12-08 23:40:05[psd]:  done 
+2016-12-08 23:40:26[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:40:27[psd]:  # iter= 2750 eta= 0.0019474196689387 current error= 56104.130860255 
+2016-12-08 23:40:48[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2016-12-08 23:40:49[psd]:  # iter= 2800 eta= 0.0019464720194647 current error= 56146.625155371 
+2016-12-08 23:40:49[psd]:  Computing Hessian 
+2016-12-08 23:40:49[psd]:  Min Hessian=0.001 Max Hessian=500 

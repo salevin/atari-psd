@@ -126,6 +126,7 @@ function trainer:hookSample(age, ex, res)
 end
 
 function trainer:hookEpoch(epoch)
+  --TODO: UPDATE DATA HERE
   local function plot(x,title,xl,yl,fname)
     -- plot training error
     gnuplot.pngfigure(paths.concat(params.rundir,fname))

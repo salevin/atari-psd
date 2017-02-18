@@ -110,6 +110,7 @@ logs.sparsity       = allerr[4]
 logs.niter          = allerr[5]
 logs.nline          = allerr[6]
 function trainer:hookSample(age, ex, res)
+  print(self)
   local err,h = res[1],res[2]
   local encerr = mlp.predcost.output/params.statinterval
   local recerr = mlp.decoder.Fcost.output/params.statinterval
@@ -130,7 +131,7 @@ end
 
 function trainer:hookEpoch(x, epoch)
   --TODO: UPDATE DATA HERE
-  print(x)
+  print(self)
   local function plot(x,title,xl,yl,fname)
     -- plot training error
     gnuplot.pngfigure(paths.concat(params.rundir,fname))

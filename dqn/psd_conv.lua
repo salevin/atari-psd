@@ -71,12 +71,9 @@ torch.manualSeed(params.seed)
 data = getdata()--imutils.mapdata(params.data)
 data:conv()
 
-print(data[0])
-
 print('Getting more images')
 data:getImages()
 data:conv()
-print(data[0])
 
 
 local ex = data[1][1]
@@ -131,8 +128,9 @@ function trainer:hookSample(age, ex, res)
   logs.nline[ii] = logs.nline[ii] + nls/#h/params.statinterval
 end
 
-function trainer:hookEpoch(epoch)
+function trainer:hookEpoch(x, epoch)
   --TODO: UPDATE DATA HERE
+  print(x)
   local function plot(x,title,xl,yl,fname)
     -- plot training error
     gnuplot.pngfigure(paths.concat(params.rundir,fname))

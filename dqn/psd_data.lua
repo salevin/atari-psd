@@ -51,6 +51,10 @@ function getdata(images, std)
     dsample = torch.Tensor(1,nrows,ncols)
   end
 
+  function dataset:getImages()
+    data = collect_data(images or 5000)
+  end
+
   setmetatable(dataset, {__index = function(self, index)
     local sample,i,im = self:selectPatch(nrows, ncols)
     dsample:copy(sample)

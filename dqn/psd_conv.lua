@@ -71,6 +71,9 @@ torch.manualSeed(params.seed)
 data = getdata()--imutils.mapdata(params.data)
 data:conv()
 
+print('Getting more images')
+data:getImages()
+data:conv()
 
 
 local ex = data[1][1]

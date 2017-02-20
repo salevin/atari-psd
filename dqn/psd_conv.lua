@@ -124,12 +124,12 @@ function trainer:hookSample(age, ex, res)
   logs.nline[ii] = logs.nline[ii] + nls/#h/params.statinterval
 end
 
-function trainer:hookEpoch(x, epoch)
+function trainer:hookEpoch(epoch)
   --TODO: UPDATE DATA HERE
-  print(self)
   print('Getting more images')
-  data:getImages()
+  data:getImages(50)
   data:conv()
+  self.data = data
 
 
   local function plot(x,title,xl,yl,fname)

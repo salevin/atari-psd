@@ -68,7 +68,7 @@ cmd:log(paths.concat(params.rundir, 'log'), params)
 torch.manualSeed(params.seed)
 
 -- create the dataset
-data = getdata()--imutils.mapdata(params.data)
+data = getdata(50)--imutils.mapdata(params.data)
 data:conv()
 
 

@@ -53,8 +53,11 @@ for i=1,100 do
 
 
   res = mlp.encoder:forward(input, target)
+  rec = mlp.decoder.D:updateOutput(res)
+  prediction = mlp.encoder:updateOutput(input)
+  mlp.decoder:updateOutput(input,prediction)
 
-  c = image.toDisplayTensor({input=res,nrow=math.ceil(math.sqrt(res:size(1))),symmetric=true,padding=1})
+  c = image.toDisplayTensor({input=mlp.decoder.code,nrow=math.ceil(math.sqrt(res:size(1))),symmetric=true,padding=1})
   w1 = image.display({image=c, win=w1})
 
 

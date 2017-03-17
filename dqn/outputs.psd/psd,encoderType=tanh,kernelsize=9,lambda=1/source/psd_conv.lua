@@ -68,8 +68,9 @@ cmd:log(paths.concat(params.rundir, 'log'), params)
 torch.manualSeed(params.seed)
 
 -- create the dataset
-data = getdata()--imutils.mapdata(params.data)
+data = getdata(50)--imutils.mapdata(params.data)
 data:conv()
+
 
 local ex = data[1][1]
 local exwidth = ex:size(ex:dim())
@@ -124,6 +125,13 @@ function trainer:hookSample(age, ex, res)
 end
 
 function trainer:hookEpoch(epoch)
+  --TODO: UPDATE DATA HERE
+  print('Getting more images')
+  data:getImages(50)
+  data:conv()
+  self.data = data
+
+
   local function plot(x,title,xl,yl,fname)
     -- plot training error
     gnuplot.pngfigure(paths.concat(params.rundir,fname))

@@ -309,7 +309,7 @@ end
 function collect_data(n)
   num_steps = n   step=0
   print("Collecting " .. num_steps .. " images.")
-  collect = torch.CudaTensor(n,210,160)
+  collect = torch.CudaTensor(n,180,160)
 
   -- For debugging
   w, dw = agent.network:getParameters()
@@ -330,7 +330,7 @@ function collect_data(n)
       end
     end
 
-    collect[i] = screen[1][1]
+    collect[i] = screen[1][1][{{31,210}}]
 
     -- display screen
     if full_display then

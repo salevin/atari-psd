@@ -1,76 +1,76 @@
-2016-12-08 21:30:10[psd]:  [program started on Thu Dec  8 21:30:10 2016] 
-2016-12-08 21:30:10[psd]:  [command line arguments] 
-2016-12-08 21:30:10[psd]:  linear false 
-2016-12-08 21:30:10[psd]:  conntable  
-2016-12-08 21:30:10[psd]:  encoderType tanh 
-2016-12-08 21:30:10[psd]:  rundir /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1 
-2016-12-08 21:30:10[psd]:  minhessian 0.001 
-2016-12-08 21:30:10[psd]:  nThread 8 
-2016-12-08 21:30:10[psd]:  hessian true 
-2016-12-08 21:30:10[psd]:  beta 1 
-2016-12-08 21:30:10[psd]:  maxhessian 500 
-2016-12-08 21:30:10[psd]:  nfiltersout 16 
-2016-12-08 21:30:10[psd]:  nfiltersin 1 
-2016-12-08 21:30:10[psd]:  v false 
-2016-12-08 21:30:10[psd]:  statinterval 50 
-2016-12-08 21:30:10[psd]:  hessianinterval 100 
-2016-12-08 21:30:10[psd]:  etadecayinterval 10000 
-2016-12-08 21:30:10[psd]:  eta 0.002 
-2016-12-08 21:30:10[psd]:  etadecay 0.1 
-2016-12-08 21:30:10[psd]:  maxiter 10000 
-2016-12-08 21:30:10[psd]:  dir outputs.psd 
-2016-12-08 21:30:10[psd]:  openmp true 
-2016-12-08 21:30:10[psd]:  seed 123211 
-2016-12-08 21:30:10[psd]:  kernelsize 9 
-2016-12-08 21:30:10[psd]:  wcar  
-2016-12-08 21:30:10[psd]:  lambda 1 
-2016-12-08 21:30:10[psd]:  [----------------------] 
-2016-12-08 21:30:10[psd]:  Torch Threads: 1 
-2016-12-08 21:30:13[psd]:  Using GPU device id: 0 
-2016-12-08 21:30:13[psd]:  Torch Seed: 1 
-2016-12-08 21:30:13[psd]:  CUTorch Seed: 1791095845 
-2016-12-08 21:30:13[psd]:  
+2017-03-11 19:06:30[psd]:  [program started on Sat Mar 11 19:06:30 2017] 
+2017-03-11 19:06:30[psd]:  [command line arguments] 
+2017-03-11 19:06:30[psd]:  linear false 
+2017-03-11 19:06:30[psd]:  conntable  
+2017-03-11 19:06:30[psd]:  encoderType tanh 
+2017-03-11 19:06:30[psd]:  rundir /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1 
+2017-03-11 19:06:30[psd]:  minhessian 0.001 
+2017-03-11 19:06:30[psd]:  nThread 8 
+2017-03-11 19:06:30[psd]:  hessian true 
+2017-03-11 19:06:30[psd]:  beta 1 
+2017-03-11 19:06:30[psd]:  maxhessian 500 
+2017-03-11 19:06:30[psd]:  nfiltersout 16 
+2017-03-11 19:06:30[psd]:  nfiltersin 1 
+2017-03-11 19:06:30[psd]:  v false 
+2017-03-11 19:06:30[psd]:  statinterval 50 
+2017-03-11 19:06:30[psd]:  hessianinterval 100 
+2017-03-11 19:06:30[psd]:  etadecayinterval 10000 
+2017-03-11 19:06:30[psd]:  eta 0.002 
+2017-03-11 19:06:30[psd]:  etadecay 0.1 
+2017-03-11 19:06:30[psd]:  maxiter 10000 
+2017-03-11 19:06:30[psd]:  dir outputs.psd 
+2017-03-11 19:06:30[psd]:  openmp true 
+2017-03-11 19:06:30[psd]:  seed 123211 
+2017-03-11 19:06:30[psd]:  kernelsize 9 
+2017-03-11 19:06:30[psd]:  wcar  
+2017-03-11 19:06:30[psd]:  lambda 1 
+2017-03-11 19:06:30[psd]:  [----------------------] 
+2017-03-11 19:06:30[psd]:  Torch Threads: 1 
+2017-03-11 19:06:30[psd]:  Using GPU device id: 0 
+2017-03-11 19:06:30[psd]:  Torch Seed: 1 
+2017-03-11 19:06:32[psd]:  CUTorch Seed: 1791095845 
+2017-03-11 19:06:32[psd]:  
 Playing: breakout 
-2016-12-08 21:30:13[psd]:  args.eta, self.eta are  nil 0.1 
-2016-12-08 21:30:13[psd]:  args.minibatch_size, self.minibatch_size are  32 32 
-2016-12-08 21:30:13[psd]:  self_start, etc are:  nil 2000 10000 
-2016-12-08 21:30:13[psd]:  Initializing ecn with args:  
-2016-12-08 21:30:13[psd]:  target_q 10000 
-2016-12-08 21:30:13[psd]:  ncols 1 
-2016-12-08 21:30:13[psd]:  replay_memory 1000000 
-2016-12-08 21:30:13[psd]:  min_reward -1 
-2016-12-08 21:30:13[psd]:  discount 0.99 
-2016-12-08 21:30:13[psd]:  learn_start 10000 
-2016-12-08 21:30:13[psd]:  hist_len 3 
-2016-12-08 21:30:13[psd]:  ep 1 
-2016-12-08 21:30:13[psd]:  network "convnet_atari3" 
-2016-12-08 21:30:13[psd]:  max_reward 1 
-2016-12-08 21:30:13[psd]:  gpu 0 
-2016-12-08 21:30:13[psd]:  n_replay 1 
-2016-12-08 21:30:13[psd]:  input_dims table: 0x41adb8b0 
-2016-12-08 21:30:13[psd]:  verbose 2 
-2016-12-08 21:30:13[psd]:  actions table: 0x41ad7a90 
-2016-12-08 21:30:13[psd]:  clip_delta 1 
-2016-12-08 21:30:13[psd]:  valid_size 500 
-2016-12-08 21:30:13[psd]:  lr 0.00025 
-2016-12-08 21:30:13[psd]:  preproc net_downsample_2x_full_y 
-2016-12-08 21:30:13[psd]:  bufferSize 512 
-2016-12-08 21:30:13[psd]:  update_freq 4 
-2016-12-08 21:30:13[psd]:  minibatch_size 32 
-2016-12-08 21:30:13[psd]:  rescale_r 1 
-2016-12-08 21:30:13[psd]:  state_dim 7056 
-2016-12-08 21:30:13[psd]:  ep_end 0.1 
-2016-12-08 21:30:13[psd]:  ECN input size is  21172 
-2016-12-08 21:30:13[psd]:  nn.Sequential {
+2017-03-11 19:06:32[psd]:  args.eta, self.eta are  nil 0.1 
+2017-03-11 19:06:32[psd]:  args.minibatch_size, self.minibatch_size are  32 32 
+2017-03-11 19:06:32[psd]:  self_start, etc are:  nil 2000 10000 
+2017-03-11 19:06:32[psd]:  Initializing ecn with args:  
+2017-03-11 19:06:32[psd]:  target_q 10000 
+2017-03-11 19:06:32[psd]:  ncols 1 
+2017-03-11 19:06:32[psd]:  replay_memory 1000000 
+2017-03-11 19:06:32[psd]:  min_reward -1 
+2017-03-11 19:06:32[psd]:  discount 0.99 
+2017-03-11 19:06:32[psd]:  learn_start 10000 
+2017-03-11 19:06:32[psd]:  hist_len 3 
+2017-03-11 19:06:32[psd]:  ep 1 
+2017-03-11 19:06:32[psd]:  network "convnet_atari3" 
+2017-03-11 19:06:32[psd]:  max_reward 1 
+2017-03-11 19:06:32[psd]:  gpu 0 
+2017-03-11 19:06:32[psd]:  n_replay 1 
+2017-03-11 19:06:32[psd]:  input_dims table: 0x4153c620 
+2017-03-11 19:06:32[psd]:  verbose 2 
+2017-03-11 19:06:32[psd]:  actions table: 0x4153bec0 
+2017-03-11 19:06:32[psd]:  clip_delta 1 
+2017-03-11 19:06:32[psd]:  valid_size 500 
+2017-03-11 19:06:32[psd]:  lr 0.00025 
+2017-03-11 19:06:32[psd]:  preproc net_downsample_2x_full_y 
+2017-03-11 19:06:32[psd]:  bufferSize 512 
+2017-03-11 19:06:32[psd]:  update_freq 4 
+2017-03-11 19:06:32[psd]:  minibatch_size 32 
+2017-03-11 19:06:32[psd]:  rescale_r 1 
+2017-03-11 19:06:32[psd]:  state_dim 7056 
+2017-03-11 19:06:32[psd]:  ep_end 0.1 
+2017-03-11 19:06:32[psd]:  ECN input size is  21172 
+2017-03-11 19:06:32[psd]:  nn.Sequential {
   [input -> (1) -> (2) -> (3) -> (4) -> output]
   (1): nn.Reshape(392)
   (2): nn.Linear(392 -> 512)
   (3): nn.Rectifier
   (4): nn.Linear(512 -> 4)
 } 
-2016-12-08 21:30:13[psd]:  Convolutional layers flattened output size: 392 
-2016-12-08 21:30:13[psd]:  Here is the main network: 
-2016-12-08 21:30:13[psd]:  nn.Concat {
+2017-03-11 19:06:32[psd]:  Convolutional layers flattened output size: 392 
+2017-03-11 19:06:32[psd]:  Here is the main network: 
+2017-03-11 19:06:32[psd]:  nn.Concat {
   input
     |`-> (1): nn.Sequential {
     |      [input -> (1) -> (2) -> output]
@@ -100,8 +100,8 @@ Playing: breakout
          }
      ... -> output
 } 
-2016-12-08 21:30:13[psd]:  The pred_training_network 
-2016-12-08 21:30:13[psd]:  nn.Concat {
+2017-03-11 19:06:32[psd]:  The pred_training_network 
+2017-03-11 19:06:32[psd]:  nn.Concat {
   input
     |`-> (1): nn.Sequential {
     |      [input -> (1) -> (2) -> output]
@@ -135,13 +135,13 @@ Playing: breakout
          }
      ... -> output
 } 
-2016-12-08 21:30:13[psd]:  Output size from pred_training_network is   32
+2017-03-11 19:06:33[psd]:  Output size from pred_training_network is   32
   2
   7
   7
 [torch.LongStorage of size 4]
  
-2016-12-08 21:30:13[psd]:  dC, dP sizes are   32
+2017-03-11 19:06:33[psd]:  dC, dP sizes are   32
   1
   7
   7
@@ -152,7 +152,7 @@ Playing: breakout
   7
 [torch.LongStorage of size 4]
  
-2016-12-08 21:30:13[psd]:  Hier netwwork nn.Sequential {
+2017-03-11 19:06:33[psd]:  Hier netwwork nn.Sequential {
   [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> output]
   (1): nn.Narrow
   (2): nn.Narrow
@@ -170,15 +170,15 @@ Playing: breakout
   (5): nn.Select
   (6): nn.Reshape(1x7x7)
 } 
-2016-12-08 21:30:13[psd]:  Hier network output size is   32
+2017-03-11 19:06:33[psd]:  Hier network output size is   32
   1
   7
   7
 [torch.LongStorage of size 4]
  
-2016-12-08 21:30:13[psd]:  Went backward through pred_training_network successfully. 
-2016-12-08 21:30:13[psd]:  The final network 
-2016-12-08 21:30:13[psd]:  nn.Sequential {
+2017-03-11 19:06:33[psd]:  Went backward through pred_training_network successfully. 
+2017-03-11 19:06:33[psd]:  The final network 
+2017-03-11 19:06:33[psd]:  nn.Sequential {
   [input -> (1) -> (2) -> output]
   (1): nn.Concat {
     input
@@ -222,352 +222,1430 @@ Playing: breakout
     }
   }
 } 
-2016-12-08 21:30:13[psd]:  CUDAfied network 
-2016-12-08 21:30:13[psd]:  Testing forward pass. 
-2016-12-08 21:30:13[psd]:  Forward output size is   32
+2017-03-11 19:06:33[psd]:  CUDAfied network 
+2017-03-11 19:06:33[psd]:  Testing forward pass. 
+2017-03-11 19:06:33[psd]:  Forward output size is   32
   4
 [torch.LongStorage of size 2]
  
-2016-12-08 21:30:13[psd]:  Testing backward pass. 
-2016-12-08 21:30:14[psd]:  Printing network. 
-2016-12-08 21:30:14[psd]:  dqn.ecn 
-2016-12-08 21:30:17[psd]:  Set up Torch using these options: 
-2016-12-08 21:30:17[psd]:  eval_steps 100000 
-2016-12-08 21:30:17[psd]:  seed 1 
-2016-12-08 21:30:17[psd]:  name ecn_breakout_FULL_Y 
-2016-12-08 21:30:17[psd]:  verbose 2 
-2016-12-08 21:30:17[psd]:  network "convnet_atari3" 
-2016-12-08 21:30:17[psd]:  reload  
-2016-12-08 21:30:17[psd]:  pool_frms table: 0x410c9720 
-2016-12-08 21:30:17[psd]:  saveNetworkParams true 
-2016-12-08 21:30:17[psd]:  full_display false 
-2016-12-08 21:30:17[psd]:  gpu 1 
-2016-12-08 21:30:17[psd]:  eval_freq 10000 
-2016-12-08 21:30:17[psd]:  tensorType torch.FloatTensor 
-2016-12-08 21:30:17[psd]:  env_params table: 0x410ccbc8 
-2016-12-08 21:30:17[psd]:  steps 100000 
-2016-12-08 21:30:17[psd]:  prog_freq 5000 
-2016-12-08 21:30:17[psd]:  agent_params table: 0x41c67268 
-2016-12-08 21:30:17[psd]:  actrep 4 
-2016-12-08 21:30:17[psd]:  framework alewrap 
-2016-12-08 21:30:17[psd]:  agent NeuralQLearner 
-2016-12-08 21:30:17[psd]:  threads 1 
-2016-12-08 21:30:17[psd]:  save_versions 0 
-2016-12-08 21:30:17[psd]:  random_starts 30 
-2016-12-08 21:30:17[psd]:  game_path ../roms/ 
-2016-12-08 21:30:17[psd]:  save_freq 50000 
-2016-12-08 21:30:17[psd]:  env breakout 
-2016-12-08 21:30:17[psd]:  Collecting 5000 images. 
-2016-12-08 21:30:58[psd]:  Convolutional psd 
-2016-12-08 21:30:58[psd]:  Starting Training 
-2016-12-08 21:30:58[psd]:  Computing Hessian 
-2016-12-08 21:30:58[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 21:34:32[psd]:  ddeltax : min/max = 0/60847.0234375 
-2016-12-08 21:34:32[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 21:34:32[psd]:  done 
-2016-12-08 21:34:32[psd]:  oops large dx 8963.7919921875 -9312.5478515625 
-2016-12-08 21:34:36[psd]:  oops large dx 4016.2802734375 -6753.0654296875 
-2016-12-08 21:34:36[psd]:  oops large dx 4983.9375 -4416.5825195312 
-2016-12-08 21:34:37[psd]:  oops large dx 2631.8872070312 -4289.7958984375 
-2016-12-08 21:34:38[psd]:  oops large dx 3198.353515625 -2746.1450195312 
-2016-12-08 21:34:38[psd]:  oops large dx 1740.8269042969 -2820.0922851562 
-2016-12-08 21:34:38[psd]:  oops large dx 2086.8696289062 -2105.443359375 
-2016-12-08 21:34:39[psd]:  oops large dx 1179.0090332031 -1889.1529541016 
-2016-12-08 21:34:39[psd]:  oops large dx 1402.5053710938 -1487.3391113281 
-2016-12-08 21:34:39[psd]:  oops large dx 797.93804931641 -1377.3420410156 
-2016-12-08 21:34:40[psd]:  oops large dx 939.16906738281 -1182.0323486328 
-2016-12-08 21:34:40[psd]:  oops large dx 547.25140380859 -1000.921875 
-2016-12-08 21:34:40[psd]:  oops large dx 644.01129150391 -896.39660644531 
-2016-12-08 21:34:40[psd]:  oops large dx 375.80163574219 -750.32775878906 
-2016-12-08 21:34:41[psd]:  oops large dx 444.87606811523 -656.85406494141 
-2016-12-08 21:34:41[psd]:  oops large dx 261.41061401367 -543.46252441406 
-2016-12-08 21:34:41[psd]:  oops large dx 309.3798828125 -509.52947998047 
-2016-12-08 21:34:42[psd]:  oops large dx 222.28610229492 -412.21801757812 
-2016-12-08 21:34:42[psd]:  oops large dx 220.93525695801 -354.53582763672 
-2016-12-08 21:34:42[psd]:  oops large dx 198.8299407959 -323.93402099609 
-2016-12-08 21:34:43[psd]:  oops large dx 202.09379577637 -309.28002929688 
-2016-12-08 21:34:43[psd]:  oops large dx 184.36456298828 -213.63110351562 
-2016-12-08 21:34:43[psd]:  oops large dx 189.93101501465 -224.12493896484 
-2016-12-08 21:34:43[psd]:  oops large dx 192.30975341797 -208.99545288086 
-2016-12-08 21:34:44[psd]:  oops large dx 182.00170898438 -197.13714599609 
-2016-12-08 21:34:44[psd]:  oops large dx 176.85945129395 -192.63612365723 
-2016-12-08 21:34:44[psd]:  oops large dx 172.64094543457 -181.07482910156 
-2016-12-08 21:34:45[psd]:  oops large dx 170.16851806641 -178.6177520752 
-2016-12-08 21:34:45[psd]:  oops large dx 162.09405517578 -166.03536987305 
-2016-12-08 21:34:45[psd]:  oops large dx 163.68524169922 -167.78894042969 
-2016-12-08 21:34:46[psd]:  oops large dx 162.35652160645 -165.73159790039 
-2016-12-08 21:34:46[psd]:  oops large dx 152.54635620117 -158.60191345215 
-2016-12-08 21:34:46[psd]:  oops large dx 155.15577697754 -152.72660827637 
-2016-12-08 21:34:46[psd]:  oops large dx 144.15461730957 -147.29681396484 
-2016-12-08 21:34:47[psd]:  oops large dx 143.02409362793 -140.58293151855 
-2016-12-08 21:34:47[psd]:  oops large dx 142.0846862793 -139.01844787598 
-2016-12-08 21:34:47[psd]:  oops large dx 139.50238037109 -132.30717468262 
-2016-12-08 21:34:48[psd]:  oops large dx 137.73004150391 -136.5973815918 
-2016-12-08 21:34:48[psd]:  oops large dx 132.76838684082 -125.7127532959 
-2016-12-08 21:34:48[psd]:  oops large dx 126.41422271729 -120.95979309082 
-2016-12-08 21:34:49[psd]:  oops large dx 128.23539733887 -118.5417098999 
-2016-12-08 21:34:49[psd]:  oops large dx 124.98043823242 -117.84043884277 
-2016-12-08 21:34:49[psd]:  oops large dx 129.97428894043 -116.7844619751 
-2016-12-08 21:34:49[psd]:  oops large dx 117.96657562256 -108.52549743652 
-2016-12-08 21:34:50[psd]:  oops large dx 125.53898620605 -110.44508361816 
-2016-12-08 21:34:50[psd]:  oops large dx 120.1307220459 -108.00688934326 
-2016-12-08 21:34:50[psd]:  oops large dx 113.76020812988 -101.16352081299 
-2016-12-08 21:34:51[psd]:  oops large dx 108.32541656494 -94.634376525879 
-2016-12-08 21:34:51[psd]:  oops large dx 109.11811065674 -99.631332397461 
-2016-12-08 21:34:51[psd]:  oops large dx 105.76789855957 -98.404289245605 
-2016-12-08 21:34:58[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 21:34:58[psd]:  # iter= 50 eta= 0.002 current error= 121983.03067297 
-2016-12-08 21:34:59[psd]:  oops large dx 102.35771179199 -100.00168609619 
-2016-12-08 21:34:59[psd]:  oops large dx 100.43984222412 -98.559501647949 
-2016-12-08 21:34:59[psd]:  oops large dx 106.69464874268 -97.971466064453 
-2016-12-08 21:35:00[psd]:  oops large dx 100.36421966553 -91.242065429688 
-2016-12-08 21:35:20[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 21:35:21[psd]:  # iter= 100 eta= 0.0019990004997501 current error= 72223.30847168 
-2016-12-08 21:35:21[psd]:  Computing Hessian 
-2016-12-08 21:35:21[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 21:39:15[psd]:  ddeltax : min/max = 0/57295.9921875 
-2016-12-08 21:39:15[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 21:39:15[psd]:  done 
-2016-12-08 21:39:37[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 21:39:37[psd]:  # iter= 150 eta= 0.001998001998002 current error= 66102.934814453 
-2016-12-08 21:39:59[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 21:39:59[psd]:  # iter= 200 eta= 0.0019970044932601 current error= 62728.290603638 
-2016-12-08 21:39:59[psd]:  Computing Hessian 
-2016-12-08 21:39:59[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 21:43:54[psd]:  ddeltax : min/max = 0/42355.70703125 
-2016-12-08 21:43:54[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 21:43:54[psd]:  done 
-2016-12-08 21:44:15[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 21:44:16[psd]:  # iter= 250 eta= 0.0019960079840319 current error= 60730.787986755 
-2016-12-08 21:44:38[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 21:44:38[psd]:  # iter= 300 eta= 0.0019950124688279 current error= 59453.358737946 
-2016-12-08 21:44:38[psd]:  Computing Hessian 
-2016-12-08 21:44:38[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 21:48:32[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 21:48:32[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 21:48:32[psd]:  done 
-2016-12-08 21:48:54[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 21:48:54[psd]:  # iter= 350 eta= 0.0019940179461615 current error= 58616.503204346 
-2016-12-08 21:49:16[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 21:49:17[psd]:  # iter= 400 eta= 0.0019930244145491 current error= 58101.298826218 
-2016-12-08 21:49:17[psd]:  Computing Hessian 
-2016-12-08 21:49:17[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 21:53:11[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 21:53:11[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 21:53:11[psd]:  done 
-2016-12-08 21:53:33[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 21:53:33[psd]:  # iter= 450 eta= 0.00199203187251 current error= 57702.517030716 
-2016-12-08 21:53:55[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 21:53:56[psd]:  # iter= 500 eta= 0.0019910403185665 current error= 57357.792915344 
-2016-12-08 21:53:56[psd]:  Computing Hessian 
-2016-12-08 21:53:56[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 21:57:50[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 21:57:50[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 21:57:50[psd]:  done 
-2016-12-08 21:58:12[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 21:58:12[psd]:  # iter= 550 eta= 0.0019900497512438 current error= 57065.107367516 
-2016-12-08 21:58:34[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 21:58:34[psd]:  # iter= 600 eta= 0.0019890601690701 current error= 56847.112543106 
-2016-12-08 21:58:34[psd]:  Computing Hessian 
-2016-12-08 21:58:34[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 22:02:29[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 22:02:29[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 22:02:29[psd]:  done 
-2016-12-08 22:02:51[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:02:51[psd]:  # iter= 650 eta= 0.0019880715705765 current error= 56686.168840408 
-2016-12-08 22:03:13[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:03:13[psd]:  # iter= 700 eta= 0.0019870839542971 current error= 56612.647553444 
-2016-12-08 22:03:13[psd]:  Computing Hessian 
-2016-12-08 22:03:13[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 22:07:08[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 22:07:08[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 22:07:08[psd]:  done 
-2016-12-08 22:07:29[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:07:30[psd]:  # iter= 750 eta= 0.0019860973187686 current error= 56503.991422653 
-2016-12-08 22:07:52[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:07:52[psd]:  # iter= 800 eta= 0.001985111662531 current error= 56424.471824169 
-2016-12-08 22:07:52[psd]:  Computing Hessian 
-2016-12-08 22:07:52[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 22:11:47[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 22:11:47[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 22:11:47[psd]:  done 
-2016-12-08 22:12:01[psd]:  oops large dx 116.76094818115 -1.1706328392029 
-2016-12-08 22:12:09[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:12:09[psd]:  # iter= 850 eta= 0.001984126984127 current error= 56347.678164482 
-2016-12-08 22:12:31[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:12:32[psd]:  # iter= 900 eta= 0.0019831432821021 current error= 56339.108120918 
-2016-12-08 22:12:32[psd]:  Computing Hessian 
-2016-12-08 22:12:32[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 22:16:26[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 22:16:26[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 22:16:26[psd]:  done 
-2016-12-08 22:16:47[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:16:48[psd]:  # iter= 950 eta= 0.001982160555005 current error= 56257.769502163 
-2016-12-08 22:17:10[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:17:10[psd]:  # iter= 1000 eta= 0.0019811788013868 current error= 56194.141067505 
-2016-12-08 22:17:10[psd]:  Computing Hessian 
-2016-12-08 22:17:10[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 22:21:05[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 22:21:05[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 22:21:05[psd]:  done 
-2016-12-08 22:21:27[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:21:28[psd]:  # iter= 1050 eta= 0.001980198019802 current error= 56209.111340761 
-2016-12-08 22:21:49[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:21:50[psd]:  # iter= 1100 eta= 0.0019792182088075 current error= 56181.072266698 
-2016-12-08 22:21:50[psd]:  Computing Hessian 
-2016-12-08 22:21:50[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 22:25:45[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 22:25:45[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 22:25:45[psd]:  done 
-2016-12-08 22:26:07[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:26:07[psd]:  # iter= 1150 eta= 0.0019782393669634 current error= 56164.813303828 
-2016-12-08 22:26:29[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:26:30[psd]:  # iter= 1200 eta= 0.0019772614928324 current error= 56139.05113256 
-2016-12-08 22:26:30[psd]:  Computing Hessian 
-2016-12-08 22:26:30[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 22:30:24[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 22:30:24[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 22:30:24[psd]:  done 
-2016-12-08 22:30:45[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:30:46[psd]:  # iter= 1250 eta= 0.0019762845849802 current error= 56125.607517302 
-2016-12-08 22:30:58[psd]:  oops large dx 112.77088928223 -0.19031295180321 
-2016-12-08 22:31:08[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:31:08[psd]:  # iter= 1300 eta= 0.0019753086419753 current error= 56187.566959679 
-2016-12-08 22:31:08[psd]:  Computing Hessian 
-2016-12-08 22:31:08[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 22:35:02[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 22:35:02[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 22:35:02[psd]:  done 
-2016-12-08 22:35:23[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:35:24[psd]:  # iter= 1350 eta= 0.0019743336623889 current error= 56141.704523742 
-2016-12-08 22:35:46[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:35:46[psd]:  # iter= 1400 eta= 0.0019733596447953 current error= 56137.227413505 
-2016-12-08 22:35:46[psd]:  Computing Hessian 
-2016-12-08 22:35:46[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 22:39:41[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 22:39:41[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 22:39:41[psd]:  done 
-2016-12-08 22:40:02[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:40:03[psd]:  # iter= 1450 eta= 0.0019723865877712 current error= 56177.859130979 
-2016-12-08 22:40:24[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:40:25[psd]:  # iter= 1500 eta= 0.0019714144898965 current error= 56151.285551429 
-2016-12-08 22:40:25[psd]:  Computing Hessian 
-2016-12-08 22:40:25[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 22:44:19[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 22:44:19[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 22:44:19[psd]:  done 
-2016-12-08 22:44:41[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:44:41[psd]:  # iter= 1550 eta= 0.0019704433497537 current error= 56082.389570802 
-2016-12-08 22:45:03[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:45:03[psd]:  # iter= 1600 eta= 0.0019694731659281 current error= 56096.67109184 
-2016-12-08 22:45:03[psd]:  Computing Hessian 
-2016-12-08 22:45:03[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 22:48:58[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 22:48:58[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 22:48:58[psd]:  done 
-2016-12-08 22:49:19[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:49:20[psd]:  # iter= 1650 eta= 0.0019685039370079 current error= 56109.103600249 
-2016-12-08 22:49:42[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:49:42[psd]:  # iter= 1700 eta= 0.0019675356615839 current error= 56056.271645263 
-2016-12-08 22:49:42[psd]:  Computing Hessian 
-2016-12-08 22:49:42[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 22:53:37[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 22:53:37[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 22:53:37[psd]:  done 
-2016-12-08 22:53:59[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:53:59[psd]:  # iter= 1750 eta= 0.0019665683382498 current error= 56056.722292237 
-2016-12-08 22:54:21[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:54:22[psd]:  # iter= 1800 eta= 0.001965601965602 current error= 56083.196403645 
-2016-12-08 22:54:22[psd]:  Computing Hessian 
-2016-12-08 22:54:22[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 22:58:16[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 22:58:16[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 22:58:16[psd]:  done 
-2016-12-08 22:58:37[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:58:38[psd]:  # iter= 1850 eta= 0.0019646365422397 current error= 56125.154777654 
-2016-12-08 22:58:59[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 22:58:59[psd]:  # iter= 1900 eta= 0.0019636720667649 current error= 56084.038291384 
-2016-12-08 22:58:59[psd]:  Computing Hessian 
-2016-12-08 22:58:59[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 23:02:53[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 23:02:53[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 23:02:53[psd]:  done 
-2016-12-08 23:03:15[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:03:16[psd]:  # iter= 1950 eta= 0.0019627085377821 current error= 56123.331175845 
-2016-12-08 23:03:38[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:03:38[psd]:  # iter= 2000 eta= 0.001961745953899 current error= 56103.99907295 
-2016-12-08 23:03:38[psd]:  Computing Hessian 
-2016-12-08 23:03:38[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 23:07:32[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 23:07:32[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 23:07:32[psd]:  done 
-2016-12-08 23:07:41[psd]:  oops large dx 104.54009246826 -0.0093924840912223 
-2016-12-08 23:07:53[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:07:54[psd]:  # iter= 2050 eta= 0.0019607843137255 current error= 56061.989884749 
-2016-12-08 23:08:16[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:08:16[psd]:  # iter= 2100 eta= 0.0019598236158746 current error= 56112.154249111 
-2016-12-08 23:08:16[psd]:  Computing Hessian 
-2016-12-08 23:08:16[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 23:12:10[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 23:12:10[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 23:12:10[psd]:  done 
-2016-12-08 23:12:32[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:12:33[psd]:  # iter= 2150 eta= 0.0019588638589618 current error= 56068.642717488 
-2016-12-08 23:12:55[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:12:55[psd]:  # iter= 2200 eta= 0.0019579050416055 current error= 56078.14286512 
-2016-12-08 23:12:55[psd]:  Computing Hessian 
-2016-12-08 23:12:55[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 23:16:49[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 23:16:49[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 23:16:49[psd]:  done 
-2016-12-08 23:17:11[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:17:11[psd]:  # iter= 2250 eta= 0.0019569471624266 current error= 56052.788213493 
-2016-12-08 23:17:33[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:17:34[psd]:  # iter= 2300 eta= 0.0019559902200489 current error= 56036.501186948 
-2016-12-08 23:17:34[psd]:  Computing Hessian 
-2016-12-08 23:17:34[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 23:21:29[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 23:21:29[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 23:21:29[psd]:  done 
-2016-12-08 23:21:51[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:21:52[psd]:  # iter= 2350 eta= 0.0019550342130987 current error= 56024.872520262 
-2016-12-08 23:22:13[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:22:14[psd]:  # iter= 2400 eta= 0.0019540791402052 current error= 56112.807512921 
-2016-12-08 23:22:14[psd]:  Computing Hessian 
-2016-12-08 23:22:14[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 23:26:07[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 23:26:07[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 23:26:07[psd]:  done 
-2016-12-08 23:26:29[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:26:30[psd]:  # iter= 2450 eta= 0.001953125 current error= 56101.788618913 
-2016-12-08 23:26:51[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:26:52[psd]:  # iter= 2500 eta= 0.0019521717911176 current error= 56060.234803775 
-2016-12-08 23:26:52[psd]:  Computing Hessian 
-2016-12-08 23:26:52[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 23:30:47[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 23:30:47[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 23:30:47[psd]:  done 
-2016-12-08 23:31:09[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:31:10[psd]:  # iter= 2550 eta= 0.0019512195121951 current error= 56095.554022914 
-2016-12-08 23:31:31[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:31:32[psd]:  # iter= 2600 eta= 0.0019502681618723 current error= 56104.871380308 
-2016-12-08 23:31:32[psd]:  Computing Hessian 
-2016-12-08 23:31:32[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 23:35:26[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 23:35:26[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 23:35:26[psd]:  done 
-2016-12-08 23:35:48[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:35:48[psd]:  # iter= 2650 eta= 0.0019493177387914 current error= 56066.718684951 
-2016-12-08 23:36:10[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:36:10[psd]:  # iter= 2700 eta= 0.0019483682415977 current error= 56063.302138831 
-2016-12-08 23:36:10[psd]:  Computing Hessian 
-2016-12-08 23:36:10[psd]:  Min Hessian=0.001 Max Hessian=500 
-2016-12-08 23:40:05[psd]:  ddeltax : min/max = 0/33599.8359375 
-2016-12-08 23:40:05[psd]:  ddeltax : min/max = 0.0010000000474975/500 
-2016-12-08 23:40:05[psd]:  done 
-2016-12-08 23:40:26[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:40:27[psd]:  # iter= 2750 eta= 0.0019474196689387 current error= 56104.130860255 
-2016-12-08 23:40:48[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
-2016-12-08 23:40:49[psd]:  # iter= 2800 eta= 0.0019464720194647 current error= 56146.625155371 
-2016-12-08 23:40:49[psd]:  Computing Hessian 
-2016-12-08 23:40:49[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-11 19:06:33[psd]:  Testing backward pass. 
+2017-03-11 19:06:33[psd]:  Printing network. 
+2017-03-11 19:06:33[psd]:  dqn.ecn 
+2017-03-11 19:06:37[psd]:  Set up Torch using these options: 
+2017-03-11 19:06:37[psd]:  eval_steps 100000 
+2017-03-11 19:06:37[psd]:  seed 1 
+2017-03-11 19:06:37[psd]:  name ecn_breakout_FULL_Y 
+2017-03-11 19:06:37[psd]:  verbose 2 
+2017-03-11 19:06:37[psd]:  network "convnet_atari3" 
+2017-03-11 19:06:37[psd]:  reload  
+2017-03-11 19:06:37[psd]:  pool_frms table: 0x4188ace8 
+2017-03-11 19:06:37[psd]:  saveNetworkParams true 
+2017-03-11 19:06:37[psd]:  full_display false 
+2017-03-11 19:06:37[psd]:  gpu 1 
+2017-03-11 19:06:37[psd]:  eval_freq 10000 
+2017-03-11 19:06:37[psd]:  tensorType torch.FloatTensor 
+2017-03-11 19:06:37[psd]:  env_params table: 0x4188ad10 
+2017-03-11 19:06:37[psd]:  steps 100000 
+2017-03-11 19:06:37[psd]:  prog_freq 5000 
+2017-03-11 19:06:37[psd]:  agent_params table: 0x4188ac20 
+2017-03-11 19:06:37[psd]:  actrep 4 
+2017-03-11 19:06:37[psd]:  framework alewrap 
+2017-03-11 19:06:37[psd]:  agent NeuralQLearner 
+2017-03-11 19:06:37[psd]:  threads 1 
+2017-03-11 19:06:37[psd]:  save_versions 0 
+2017-03-11 19:06:37[psd]:  random_starts 30 
+2017-03-11 19:06:37[psd]:  game_path ../roms/ 
+2017-03-11 19:06:37[psd]:  save_freq 50000 
+2017-03-11 19:06:37[psd]:  env breakout 
+2017-03-11 19:06:37[psd]:  Collecting 50 images. 
+2017-03-11 19:06:38[psd]:  Convolutional psd 
+2017-03-11 19:06:38[psd]:  Starting Training 
+2017-03-11 19:06:38[psd]:  Computing Hessian 
+2017-03-11 19:06:38[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-11 19:09:40[psd]:  ddeltax : min/max = 0/51793.4453125 
+2017-03-11 19:09:40[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-11 19:09:40[psd]:  done 
+2017-03-11 19:09:40[psd]:  oops large dx 7528.2856445312 -6459.326171875 
+2017-03-11 19:09:41[psd]:  oops large dx 4411.224609375 -3991.6264648438 
+2017-03-11 19:09:44[psd]:  oops large dx 2458.4223632812 -2734.189453125 
+2017-03-11 19:09:47[psd]:  oops large dx 2346.4416503906 -2660.67578125 
+2017-03-11 19:09:50[psd]:  oops large dx 1917.8756103516 -1963.5930175781 
+2017-03-11 19:09:53[psd]:  oops large dx 1675.0972900391 -1796.1514892578 
+2017-03-11 19:09:56[psd]:  oops large dx 1420.0031738281 -1540.4497070312 
+2017-03-11 19:09:59[psd]:  oops large dx 1215.9017333984 -1341.1395263672 
+2017-03-11 19:10:02[psd]:  oops large dx 1041.9467773438 -1167.77734375 
+2017-03-11 19:10:05[psd]:  oops large dx 889.50329589844 -1022.0493774414 
+2017-03-11 19:10:08[psd]:  oops large dx 763.14819335938 -883.61547851562 
+2017-03-11 19:10:11[psd]:  oops large dx 653.31683349609 -771.64544677734 
+2017-03-11 19:10:14[psd]:  oops large dx 559.34344482422 -672.24481201172 
+2017-03-11 19:10:17[psd]:  oops large dx 483.68948364258 -588.55523681641 
+2017-03-11 19:10:20[psd]:  oops large dx 409.94192504883 -513.56988525391 
+2017-03-11 19:10:23[psd]:  oops large dx 361.91271972656 -446.58694458008 
+2017-03-11 19:10:25[psd]:  oops large dx 310.46206665039 -399.1220703125 
+2017-03-11 19:10:28[psd]:  oops large dx 269.17630004883 -338.57171630859 
+2017-03-11 19:10:31[psd]:  oops large dx 233.45823669434 -307.19784545898 
+2017-03-11 19:10:34[psd]:  oops large dx 212.60386657715 -262.86517333984 
+2017-03-11 19:10:37[psd]:  oops large dx 188.02635192871 -233.9231262207 
+2017-03-11 19:10:40[psd]:  oops large dx 175.31442260742 -199.98779296875 
+2017-03-11 19:10:43[psd]:  oops large dx 171.18630981445 -184.41839599609 
+2017-03-11 19:10:46[psd]:  oops large dx 176.69316101074 -168.51342773438 
+2017-03-11 19:10:49[psd]:  oops large dx 166.89935302734 -155.59184265137 
+2017-03-11 19:10:52[psd]:  oops large dx 169.94448852539 -154.89361572266 
+2017-03-11 19:10:55[psd]:  oops large dx 165.25820922852 -150.04118347168 
+2017-03-11 19:10:58[psd]:  oops large dx 161.38935852051 -144.5518951416 
+2017-03-11 19:11:01[psd]:  oops large dx 158.34745788574 -138.86959838867 
+2017-03-11 19:11:04[psd]:  oops large dx 146.48173522949 -126.48770904541 
+2017-03-11 19:11:07[psd]:  oops large dx 148.50807189941 -128.77935791016 
+2017-03-11 19:11:10[psd]:  oops large dx 137.39585876465 -115.11555480957 
+2017-03-11 19:11:13[psd]:  oops large dx 144.57037353516 -122.63333129883 
+2017-03-11 19:11:16[psd]:  oops large dx 142.63230895996 -116.62367248535 
+2017-03-11 19:11:19[psd]:  oops large dx 134.42663574219 -112.53239440918 
+2017-03-11 19:11:22[psd]:  oops large dx 136.9104309082 -109.77448272705 
+2017-03-11 19:11:25[psd]:  oops large dx 133.46832275391 -106.97998809814 
+2017-03-11 19:11:28[psd]:  oops large dx 123.84187316895 -96.922981262207 
+2017-03-11 19:11:31[psd]:  oops large dx 124.49172210693 -100.20993041992 
+2017-03-11 19:11:33[psd]:  oops large dx 123.69839477539 -95.566413879395 
+2017-03-11 19:11:36[psd]:  oops large dx 117.06404876709 -89.829208374023 
+2017-03-11 19:11:39[psd]:  oops large dx 119.5212020874 -93.001602172852 
+2017-03-11 19:11:42[psd]:  oops large dx 115.83419799805 -88.041053771973 
+2017-03-11 19:11:45[psd]:  oops large dx 110.33422851562 -83.097129821777 
+2017-03-11 19:11:48[psd]:  oops large dx 113.91843414307 -87.292129516602 
+2017-03-11 19:11:51[psd]:  oops large dx 109.29287719727 -83.858436584473 
+2017-03-11 19:11:54[psd]:  oops large dx 111.26040649414 -88.037498474121 
+2017-03-11 19:11:57[psd]:  oops large dx 108.34275817871 -83.287239074707 
+2017-03-11 19:12:00[psd]:  oops large dx 103.3484954834 -78.420547485352 
+2017-03-11 19:12:03[psd]:  Getting more images 
+2017-03-11 19:12:03[psd]:  Collecting 50 images. 
+2017-03-11 19:12:10[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 19:12:10[psd]:  # iter= 50 eta= 0.002 current error= 79396.521820068 
+2017-03-11 19:14:38[psd]:  Getting more images 
+2017-03-11 19:14:38[psd]:  Collecting 50 images. 
+2017-03-11 19:14:44[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 19:14:44[psd]:  # iter= 100 eta= 0.0019990004997501 current error= 32490.882118225 
+2017-03-11 19:14:44[psd]:  Computing Hessian 
+2017-03-11 19:14:44[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-11 19:40:23[psd]:  ddeltax : min/max = 0/49997.28515625 
+2017-03-11 19:40:23[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-11 19:40:23[psd]:  done 
+2017-03-11 19:42:51[psd]:  Getting more images 
+2017-03-11 19:42:51[psd]:  Collecting 50 images. 
+2017-03-11 19:42:57[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 19:42:57[psd]:  # iter= 150 eta= 0.001998001998002 current error= 27411.92514801 
+2017-03-11 19:45:25[psd]:  Getting more images 
+2017-03-11 19:45:25[psd]:  Collecting 50 images. 
+2017-03-11 19:45:31[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 19:45:32[psd]:  # iter= 200 eta= 0.0019970044932601 current error= 24942.501991272 
+2017-03-11 19:45:32[psd]:  Computing Hessian 
+2017-03-11 19:45:32[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-11 20:11:12[psd]:  ddeltax : min/max = 0/40961.3671875 
+2017-03-11 20:11:12[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-11 20:11:12[psd]:  done 
+2017-03-11 20:13:40[psd]:  Getting more images 
+2017-03-11 20:13:40[psd]:  Collecting 50 images. 
+2017-03-11 20:13:46[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 20:13:46[psd]:  # iter= 250 eta= 0.0019960079840319 current error= 23921.395195007 
+2017-03-11 20:16:14[psd]:  Getting more images 
+2017-03-11 20:16:14[psd]:  Collecting 50 images. 
+2017-03-11 20:16:20[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 20:16:21[psd]:  # iter= 300 eta= 0.0019950124688279 current error= 22933.202575684 
+2017-03-11 20:16:21[psd]:  Computing Hessian 
+2017-03-11 20:16:21[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-11 20:42:00[psd]:  ddeltax : min/max = 0/36221.01171875 
+2017-03-11 20:42:00[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-11 20:42:00[psd]:  done 
+2017-03-11 20:44:28[psd]:  Getting more images 
+2017-03-11 20:44:28[psd]:  Collecting 50 images. 
+2017-03-11 20:44:34[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 20:44:35[psd]:  # iter= 350 eta= 0.0019940179461615 current error= 22359.852779388 
+2017-03-11 20:47:03[psd]:  Getting more images 
+2017-03-11 20:47:03[psd]:  Collecting 50 images. 
+2017-03-11 20:47:09[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 20:47:09[psd]:  # iter= 400 eta= 0.0019930244145491 current error= 21849.424423218 
+2017-03-11 20:47:09[psd]:  Computing Hessian 
+2017-03-11 20:47:09[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-11 21:12:46[psd]:  ddeltax : min/max = 0/32921.11328125 
+2017-03-11 21:12:46[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-11 21:12:46[psd]:  done 
+2017-03-11 21:15:14[psd]:  Getting more images 
+2017-03-11 21:15:14[psd]:  Collecting 50 images. 
+2017-03-11 21:15:20[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 21:15:21[psd]:  # iter= 450 eta= 0.00199203187251 current error= 21446.46037674 
+2017-03-11 21:17:49[psd]:  Getting more images 
+2017-03-11 21:17:49[psd]:  Collecting 50 images. 
+2017-03-11 21:17:55[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 21:17:55[psd]:  # iter= 500 eta= 0.0019910403185665 current error= 20829.999923706 
+2017-03-11 21:17:55[psd]:  Computing Hessian 
+2017-03-11 21:17:55[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-11 21:43:35[psd]:  ddeltax : min/max = 0/30575.701171875 
+2017-03-11 21:43:35[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-11 21:43:35[psd]:  done 
+2017-03-11 21:46:03[psd]:  Getting more images 
+2017-03-11 21:46:03[psd]:  Collecting 50 images. 
+2017-03-11 21:46:09[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 21:46:10[psd]:  # iter= 550 eta= 0.0019900497512438 current error= 21026.969554901 
+2017-03-11 21:48:37[psd]:  Getting more images 
+2017-03-11 21:48:37[psd]:  Collecting 50 images. 
+2017-03-11 21:48:43[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 21:48:44[psd]:  # iter= 600 eta= 0.0019890601690701 current error= 20879.343612671 
+2017-03-11 21:48:44[psd]:  Computing Hessian 
+2017-03-11 21:48:44[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-11 22:14:24[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-11 22:14:24[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-11 22:14:24[psd]:  done 
+2017-03-11 22:16:52[psd]:  Getting more images 
+2017-03-11 22:16:52[psd]:  Collecting 50 images. 
+2017-03-11 22:16:58[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 22:16:58[psd]:  # iter= 650 eta= 0.0019880715705765 current error= 20505.411045074 
+2017-03-11 22:19:26[psd]:  Getting more images 
+2017-03-11 22:19:26[psd]:  Collecting 50 images. 
+2017-03-11 22:19:32[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 22:19:33[psd]:  # iter= 700 eta= 0.0019870839542971 current error= 20434.124916077 
+2017-03-11 22:19:33[psd]:  Computing Hessian 
+2017-03-11 22:19:33[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-11 22:45:11[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-11 22:45:11[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-11 22:45:11[psd]:  done 
+2017-03-11 22:47:39[psd]:  Getting more images 
+2017-03-11 22:47:39[psd]:  Collecting 50 images. 
+2017-03-11 22:47:45[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 22:47:45[psd]:  # iter= 750 eta= 0.0019860973187686 current error= 20226.802091599 
+2017-03-11 22:50:13[psd]:  Getting more images 
+2017-03-11 22:50:13[psd]:  Collecting 50 images. 
+2017-03-11 22:50:20[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 22:50:20[psd]:  # iter= 800 eta= 0.001985111662531 current error= 20217.478263855 
+2017-03-11 22:50:20[psd]:  Computing Hessian 
+2017-03-11 22:50:20[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-11 23:16:00[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-11 23:16:00[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-11 23:16:00[psd]:  done 
+2017-03-11 23:18:28[psd]:  Getting more images 
+2017-03-11 23:18:28[psd]:  Collecting 50 images. 
+2017-03-11 23:18:34[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 23:18:34[psd]:  # iter= 850 eta= 0.001984126984127 current error= 20092.009279251 
+2017-03-11 23:21:02[psd]:  Getting more images 
+2017-03-11 23:21:02[psd]:  Collecting 50 images. 
+2017-03-11 23:21:08[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 23:21:09[psd]:  # iter= 900 eta= 0.0019831432821021 current error= 20143.559412003 
+2017-03-11 23:21:09[psd]:  Computing Hessian 
+2017-03-11 23:21:09[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-11 23:46:48[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-11 23:46:48[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-11 23:46:48[psd]:  done 
+2017-03-11 23:49:16[psd]:  Getting more images 
+2017-03-11 23:49:16[psd]:  Collecting 50 images. 
+2017-03-11 23:49:22[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 23:49:22[psd]:  # iter= 950 eta= 0.001982160555005 current error= 20162.820812225 
+2017-03-11 23:51:50[psd]:  Getting more images 
+2017-03-11 23:51:50[psd]:  Collecting 50 images. 
+2017-03-11 23:51:56[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-11 23:51:56[psd]:  # iter= 1000 eta= 0.0019811788013868 current error= 20215.179264069 
+2017-03-11 23:51:56[psd]:  Computing Hessian 
+2017-03-11 23:51:56[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 00:17:35[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 00:17:35[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 00:17:35[psd]:  done 
+2017-03-12 00:20:02[psd]:  Getting more images 
+2017-03-12 00:20:02[psd]:  Collecting 50 images. 
+2017-03-12 00:20:08[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 00:20:09[psd]:  # iter= 1050 eta= 0.001980198019802 current error= 20098.261123657 
+2017-03-12 00:22:37[psd]:  Getting more images 
+2017-03-12 00:22:37[psd]:  Collecting 50 images. 
+2017-03-12 00:22:43[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 00:22:43[psd]:  # iter= 1100 eta= 0.0019792182088075 current error= 20192.640604019 
+2017-03-12 00:22:43[psd]:  Computing Hessian 
+2017-03-12 00:22:43[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 00:48:23[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 00:48:23[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 00:48:23[psd]:  done 
+2017-03-12 00:50:50[psd]:  Getting more images 
+2017-03-12 00:50:50[psd]:  Collecting 50 images. 
+2017-03-12 00:50:56[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 00:50:57[psd]:  # iter= 1150 eta= 0.0019782393669634 current error= 20176.551523209 
+2017-03-12 00:53:25[psd]:  Getting more images 
+2017-03-12 00:53:25[psd]:  Collecting 50 images. 
+2017-03-12 00:53:31[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 00:53:31[psd]:  # iter= 1200 eta= 0.0019772614928324 current error= 19894.108150482 
+2017-03-12 00:53:31[psd]:  Computing Hessian 
+2017-03-12 00:53:31[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 01:19:09[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 01:19:09[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 01:19:09[psd]:  done 
+2017-03-12 01:21:37[psd]:  Getting more images 
+2017-03-12 01:21:37[psd]:  Collecting 50 images. 
+2017-03-12 01:21:43[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 01:21:43[psd]:  # iter= 1250 eta= 0.0019762845849802 current error= 20134.072162628 
+2017-03-12 01:24:11[psd]:  Getting more images 
+2017-03-12 01:24:11[psd]:  Collecting 50 images. 
+2017-03-12 01:24:17[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 01:24:18[psd]:  # iter= 1300 eta= 0.0019753086419753 current error= 20059.113061905 
+2017-03-12 01:24:18[psd]:  Computing Hessian 
+2017-03-12 01:24:18[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 01:49:57[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 01:49:57[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 01:49:57[psd]:  done 
+2017-03-12 01:52:25[psd]:  Getting more images 
+2017-03-12 01:52:25[psd]:  Collecting 50 images. 
+2017-03-12 01:52:31[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 01:52:32[psd]:  # iter= 1350 eta= 0.0019743336623889 current error= 19994.703256607 
+2017-03-12 01:54:59[psd]:  Getting more images 
+2017-03-12 01:54:59[psd]:  Collecting 50 images. 
+2017-03-12 01:55:05[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 01:55:06[psd]:  # iter= 1400 eta= 0.0019733596447953 current error= 20036.617797852 
+2017-03-12 01:55:06[psd]:  Computing Hessian 
+2017-03-12 01:55:06[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 03:20:46[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 03:20:46[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 03:20:46[psd]:  done 
+2017-03-12 03:23:14[psd]:  Getting more images 
+2017-03-12 03:23:14[psd]:  Collecting 50 images. 
+2017-03-12 03:23:20[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 03:23:20[psd]:  # iter= 1450 eta= 0.0019723865877712 current error= 20105.269042969 
+2017-03-12 03:25:48[psd]:  Getting more images 
+2017-03-12 03:25:48[psd]:  Collecting 50 images. 
+2017-03-12 03:25:54[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 03:25:55[psd]:  # iter= 1500 eta= 0.0019714144898965 current error= 19991.68239975 
+2017-03-12 03:25:55[psd]:  Computing Hessian 
+2017-03-12 03:25:55[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 03:51:35[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 03:51:35[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 03:51:35[psd]:  done 
+2017-03-12 03:54:03[psd]:  Getting more images 
+2017-03-12 03:54:03[psd]:  Collecting 50 images. 
+2017-03-12 03:54:09[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 03:54:09[psd]:  # iter= 1550 eta= 0.0019704433497537 current error= 20022.260940552 
+2017-03-12 03:56:37[psd]:  Getting more images 
+2017-03-12 03:56:37[psd]:  Collecting 50 images. 
+2017-03-12 03:56:43[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 03:56:44[psd]:  # iter= 1600 eta= 0.0019694731659281 current error= 19878.222112656 
+2017-03-12 03:56:44[psd]:  Computing Hessian 
+2017-03-12 03:56:44[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 04:22:24[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 04:22:24[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 04:22:24[psd]:  done 
+2017-03-12 04:24:52[psd]:  Getting more images 
+2017-03-12 04:24:52[psd]:  Collecting 50 images. 
+2017-03-12 04:24:58[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 04:24:58[psd]:  # iter= 1650 eta= 0.0019685039370079 current error= 19917.615398407 
+2017-03-12 04:27:26[psd]:  Getting more images 
+2017-03-12 04:27:26[psd]:  Collecting 50 images. 
+2017-03-12 04:27:32[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 04:27:33[psd]:  # iter= 1700 eta= 0.0019675356615839 current error= 20041.946504593 
+2017-03-12 04:27:33[psd]:  Computing Hessian 
+2017-03-12 04:27:33[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 04:53:12[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 04:53:12[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 04:53:12[psd]:  done 
+2017-03-12 04:55:40[psd]:  Getting more images 
+2017-03-12 04:55:40[psd]:  Collecting 50 images. 
+2017-03-12 04:55:46[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 04:55:46[psd]:  # iter= 1750 eta= 0.0019665683382498 current error= 19841.188558578 
+2017-03-12 04:58:14[psd]:  Getting more images 
+2017-03-12 04:58:14[psd]:  Collecting 50 images. 
+2017-03-12 04:58:21[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 04:58:21[psd]:  # iter= 1800 eta= 0.001965601965602 current error= 19989.78622818 
+2017-03-12 04:58:21[psd]:  Computing Hessian 
+2017-03-12 04:58:21[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 05:24:02[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 05:24:02[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 05:24:02[psd]:  done 
+2017-03-12 05:26:29[psd]:  Getting more images 
+2017-03-12 05:26:29[psd]:  Collecting 50 images. 
+2017-03-12 05:26:36[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 05:26:36[psd]:  # iter= 1850 eta= 0.0019646365422397 current error= 19802.02148056 
+2017-03-12 05:29:04[psd]:  Getting more images 
+2017-03-12 05:29:04[psd]:  Collecting 50 images. 
+2017-03-12 05:29:10[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 05:29:10[psd]:  # iter= 1900 eta= 0.0019636720667649 current error= 19938.211771011 
+2017-03-12 05:29:10[psd]:  Computing Hessian 
+2017-03-12 05:29:10[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 05:54:51[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 05:54:51[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 05:54:51[psd]:  done 
+2017-03-12 05:57:18[psd]:  Getting more images 
+2017-03-12 05:57:18[psd]:  Collecting 50 images. 
+2017-03-12 05:57:24[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 05:57:24[psd]:  # iter= 1950 eta= 0.0019627085377821 current error= 19875.037483215 
+2017-03-12 05:59:52[psd]:  Getting more images 
+2017-03-12 05:59:52[psd]:  Collecting 50 images. 
+2017-03-12 05:59:58[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 05:59:59[psd]:  # iter= 2000 eta= 0.001961745953899 current error= 19697.607450485 
+2017-03-12 05:59:59[psd]:  Computing Hessian 
+2017-03-12 05:59:59[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 06:25:41[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 06:25:41[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 06:25:41[psd]:  done 
+2017-03-12 06:28:09[psd]:  Getting more images 
+2017-03-12 06:28:09[psd]:  Collecting 50 images. 
+2017-03-12 06:28:15[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 06:28:16[psd]:  # iter= 2050 eta= 0.0019607843137255 current error= 20104.158109665 
+2017-03-12 06:30:44[psd]:  Getting more images 
+2017-03-12 06:30:44[psd]:  Collecting 50 images. 
+2017-03-12 06:30:50[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 06:30:50[psd]:  # iter= 2100 eta= 0.0019598236158746 current error= 19980.561840057 
+2017-03-12 06:30:50[psd]:  Computing Hessian 
+2017-03-12 06:30:50[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 06:56:30[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 06:56:30[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 06:56:30[psd]:  done 
+2017-03-12 06:58:58[psd]:  Getting more images 
+2017-03-12 06:58:58[psd]:  Collecting 50 images. 
+2017-03-12 06:59:04[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 06:59:04[psd]:  # iter= 2150 eta= 0.0019588638589618 current error= 19955.456861496 
+2017-03-12 07:01:32[psd]:  Getting more images 
+2017-03-12 07:01:32[psd]:  Collecting 50 images. 
+2017-03-12 07:01:38[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 07:01:38[psd]:  # iter= 2200 eta= 0.0019579050416055 current error= 19940.480754852 
+2017-03-12 07:01:38[psd]:  Computing Hessian 
+2017-03-12 07:01:38[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 07:27:19[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 07:27:19[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 07:27:19[psd]:  done 
+2017-03-12 07:29:47[psd]:  Getting more images 
+2017-03-12 07:29:47[psd]:  Collecting 50 images. 
+2017-03-12 07:29:53[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 07:29:53[psd]:  # iter= 2250 eta= 0.0019569471624266 current error= 19975.055356979 
+2017-03-12 07:32:21[psd]:  Getting more images 
+2017-03-12 07:32:21[psd]:  Collecting 50 images. 
+2017-03-12 07:32:28[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 07:32:28[psd]:  # iter= 2300 eta= 0.0019559902200489 current error= 19992.63277626 
+2017-03-12 07:32:28[psd]:  Computing Hessian 
+2017-03-12 07:32:28[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 07:58:08[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 07:58:08[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 07:58:08[psd]:  done 
+2017-03-12 08:00:36[psd]:  Getting more images 
+2017-03-12 08:00:36[psd]:  Collecting 50 images. 
+2017-03-12 08:00:42[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 08:00:43[psd]:  # iter= 2350 eta= 0.0019550342130987 current error= 19983.671062469 
+2017-03-12 08:03:11[psd]:  Getting more images 
+2017-03-12 08:03:11[psd]:  Collecting 50 images. 
+2017-03-12 08:03:17[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 08:03:17[psd]:  # iter= 2400 eta= 0.0019540791402052 current error= 19976.501678467 
+2017-03-12 08:03:17[psd]:  Computing Hessian 
+2017-03-12 08:03:17[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 08:28:59[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 08:28:59[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 08:28:59[psd]:  done 
+2017-03-12 08:31:26[psd]:  Getting more images 
+2017-03-12 08:31:26[psd]:  Collecting 50 images. 
+2017-03-12 08:31:33[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 08:31:33[psd]:  # iter= 2450 eta= 0.001953125 current error= 19977.900509834 
+2017-03-12 08:34:01[psd]:  Getting more images 
+2017-03-12 08:34:01[psd]:  Collecting 50 images. 
+2017-03-12 08:34:07[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 08:34:08[psd]:  # iter= 2500 eta= 0.0019521717911176 current error= 19868.620746613 
+2017-03-12 08:34:08[psd]:  Computing Hessian 
+2017-03-12 08:34:08[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 08:59:48[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 08:59:48[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 08:59:48[psd]:  done 
+2017-03-12 09:02:15[psd]:  Getting more images 
+2017-03-12 09:02:15[psd]:  Collecting 50 images. 
+2017-03-12 09:02:21[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 09:02:22[psd]:  # iter= 2550 eta= 0.0019512195121951 current error= 19901.720561981 
+2017-03-12 09:04:49[psd]:  Getting more images 
+2017-03-12 09:04:49[psd]:  Collecting 50 images. 
+2017-03-12 09:04:55[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 09:04:56[psd]:  # iter= 2600 eta= 0.0019502681618723 current error= 19796.483400345 
+2017-03-12 09:04:56[psd]:  Computing Hessian 
+2017-03-12 09:04:56[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 09:30:36[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 09:30:36[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 09:30:36[psd]:  done 
+2017-03-12 09:33:04[psd]:  Getting more images 
+2017-03-12 09:33:04[psd]:  Collecting 50 images. 
+2017-03-12 09:33:10[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 09:33:10[psd]:  # iter= 2650 eta= 0.0019493177387914 current error= 19885.128440857 
+2017-03-12 09:35:38[psd]:  Getting more images 
+2017-03-12 09:35:38[psd]:  Collecting 50 images. 
+2017-03-12 09:35:44[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 09:35:45[psd]:  # iter= 2700 eta= 0.0019483682415977 current error= 19960.831310272 
+2017-03-12 09:35:45[psd]:  Computing Hessian 
+2017-03-12 09:35:45[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 10:01:23[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 10:01:23[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 10:01:23[psd]:  done 
+2017-03-12 10:03:51[psd]:  Getting more images 
+2017-03-12 10:03:51[psd]:  Collecting 50 images. 
+2017-03-12 10:03:57[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 10:03:58[psd]:  # iter= 2750 eta= 0.0019474196689387 current error= 19991.705356598 
+2017-03-12 10:06:25[psd]:  Getting more images 
+2017-03-12 10:06:25[psd]:  Collecting 50 images. 
+2017-03-12 10:06:31[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 10:06:32[psd]:  # iter= 2800 eta= 0.0019464720194647 current error= 19975.552293777 
+2017-03-12 10:06:32[psd]:  Computing Hessian 
+2017-03-12 10:06:32[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 10:32:12[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 10:32:12[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 10:32:12[psd]:  done 
+2017-03-12 10:34:40[psd]:  Getting more images 
+2017-03-12 10:34:40[psd]:  Collecting 50 images. 
+2017-03-12 10:34:46[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 10:34:46[psd]:  # iter= 2850 eta= 0.0019455252918288 current error= 19791.359203339 
+2017-03-12 10:37:14[psd]:  Getting more images 
+2017-03-12 10:37:14[psd]:  Collecting 50 images. 
+2017-03-12 10:37:20[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 10:37:20[psd]:  # iter= 2900 eta= 0.0019445794846864 current error= 19809.790794373 
+2017-03-12 10:37:20[psd]:  Computing Hessian 
+2017-03-12 10:37:20[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 11:03:00[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 11:03:00[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 11:03:00[psd]:  done 
+2017-03-12 11:05:27[psd]:  Getting more images 
+2017-03-12 11:05:27[psd]:  Collecting 50 images. 
+2017-03-12 11:05:33[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 11:05:34[psd]:  # iter= 2950 eta= 0.0019436345966958 current error= 20003.369132042 
+2017-03-12 11:08:01[psd]:  Getting more images 
+2017-03-12 11:08:01[psd]:  Collecting 50 images. 
+2017-03-12 11:08:07[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 11:08:08[psd]:  # iter= 3000 eta= 0.0019426906265177 current error= 19723.830638885 
+2017-03-12 11:08:08[psd]:  Computing Hessian 
+2017-03-12 11:08:08[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 11:33:46[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 11:33:46[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 11:33:46[psd]:  done 
+2017-03-12 11:36:13[psd]:  Getting more images 
+2017-03-12 11:36:13[psd]:  Collecting 50 images. 
+2017-03-12 11:36:19[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 11:36:20[psd]:  # iter= 3050 eta= 0.0019417475728155 current error= 19715.084388733 
+2017-03-12 11:38:48[psd]:  Getting more images 
+2017-03-12 11:38:48[psd]:  Collecting 50 images. 
+2017-03-12 11:38:54[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 11:38:54[psd]:  # iter= 3100 eta= 0.0019408054342552 current error= 19814.922170639 
+2017-03-12 11:38:54[psd]:  Computing Hessian 
+2017-03-12 11:38:54[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 12:04:36[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 12:04:36[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 12:04:36[psd]:  done 
+2017-03-12 12:07:04[psd]:  Getting more images 
+2017-03-12 12:07:04[psd]:  Collecting 50 images. 
+2017-03-12 12:07:10[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 12:07:10[psd]:  # iter= 3150 eta= 0.0019398642095053 current error= 19983.120885849 
+2017-03-12 12:09:38[psd]:  Getting more images 
+2017-03-12 12:09:38[psd]:  Collecting 50 images. 
+2017-03-12 12:09:44[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 12:09:44[psd]:  # iter= 3200 eta= 0.001938923897237 current error= 19827.742008209 
+2017-03-12 12:09:44[psd]:  Computing Hessian 
+2017-03-12 12:09:44[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 12:35:24[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 12:35:24[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 12:35:24[psd]:  done 
+2017-03-12 12:37:52[psd]:  Getting more images 
+2017-03-12 12:37:52[psd]:  Collecting 50 images. 
+2017-03-12 12:37:58[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 12:37:59[psd]:  # iter= 3250 eta= 0.001937984496124 current error= 19777.734037399 
+2017-03-12 12:40:27[psd]:  Getting more images 
+2017-03-12 12:40:27[psd]:  Collecting 50 images. 
+2017-03-12 12:40:33[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 12:40:33[psd]:  # iter= 3300 eta= 0.0019370460048426 current error= 19968.355215073 
+2017-03-12 12:40:33[psd]:  Computing Hessian 
+2017-03-12 12:40:33[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 13:06:12[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 13:06:12[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 13:06:12[psd]:  done 
+2017-03-12 13:08:40[psd]:  Getting more images 
+2017-03-12 13:08:40[psd]:  Collecting 50 images. 
+2017-03-12 13:08:46[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 13:08:47[psd]:  # iter= 3350 eta= 0.0019361084220716 current error= 19766.819753647 
+2017-03-12 13:11:14[psd]:  Getting more images 
+2017-03-12 13:11:14[psd]:  Collecting 50 images. 
+2017-03-12 13:11:20[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 13:11:21[psd]:  # iter= 3400 eta= 0.0019351717464925 current error= 19962.706260681 
+2017-03-12 13:11:21[psd]:  Computing Hessian 
+2017-03-12 13:11:21[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 13:37:01[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 13:37:01[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 13:37:01[psd]:  done 
+2017-03-12 13:39:29[psd]:  Getting more images 
+2017-03-12 13:39:29[psd]:  Collecting 50 images. 
+2017-03-12 13:39:35[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 13:39:35[psd]:  # iter= 3450 eta= 0.0019342359767892 current error= 19875.932600021 
+2017-03-12 13:42:03[psd]:  Getting more images 
+2017-03-12 13:42:03[psd]:  Collecting 50 images. 
+2017-03-12 13:42:09[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 13:42:10[psd]:  # iter= 3500 eta= 0.0019333011116481 current error= 19747.029428482 
+2017-03-12 13:42:10[psd]:  Computing Hessian 
+2017-03-12 13:42:10[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 14:07:49[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 14:07:49[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 14:07:49[psd]:  done 
+2017-03-12 14:10:17[psd]:  Getting more images 
+2017-03-12 14:10:17[psd]:  Collecting 50 images. 
+2017-03-12 14:10:23[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 14:10:24[psd]:  # iter= 3550 eta= 0.0019323671497585 current error= 19625.152643204 
+2017-03-12 14:12:51[psd]:  Getting more images 
+2017-03-12 14:12:51[psd]:  Collecting 50 images. 
+2017-03-12 14:12:58[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 14:12:58[psd]:  # iter= 3600 eta= 0.0019314340898117 current error= 19666.722127914 
+2017-03-12 14:12:58[psd]:  Computing Hessian 
+2017-03-12 14:12:58[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 14:38:36[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 14:38:36[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 14:38:36[psd]:  done 
+2017-03-12 14:41:04[psd]:  Getting more images 
+2017-03-12 14:41:04[psd]:  Collecting 50 images. 
+2017-03-12 14:41:10[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 14:41:11[psd]:  # iter= 3650 eta= 0.0019305019305019 current error= 19758.969501495 
+2017-03-12 14:43:39[psd]:  Getting more images 
+2017-03-12 14:43:39[psd]:  Collecting 50 images. 
+2017-03-12 14:43:45[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 14:43:45[psd]:  # iter= 3700 eta= 0.0019295706705258 current error= 19889.01672554 
+2017-03-12 14:43:45[psd]:  Computing Hessian 
+2017-03-12 14:43:45[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 15:09:25[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 15:09:25[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 15:09:25[psd]:  done 
+2017-03-12 15:11:52[psd]:  Getting more images 
+2017-03-12 15:11:52[psd]:  Collecting 50 images. 
+2017-03-12 15:11:58[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 15:11:58[psd]:  # iter= 3750 eta= 0.0019286403085824 current error= 19883.79072094 
+2017-03-12 15:14:27[psd]:  Getting more images 
+2017-03-12 15:14:27[psd]:  Collecting 50 images. 
+2017-03-12 15:14:33[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 15:14:33[psd]:  # iter= 3800 eta= 0.0019277108433735 current error= 19809.512569427 
+2017-03-12 15:14:33[psd]:  Computing Hessian 
+2017-03-12 15:14:33[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 15:40:13[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 15:40:13[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 15:40:13[psd]:  done 
+2017-03-12 15:42:41[psd]:  Getting more images 
+2017-03-12 15:42:41[psd]:  Collecting 50 images. 
+2017-03-12 15:42:47[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 15:42:48[psd]:  # iter= 3850 eta= 0.0019267822736031 current error= 19955.755435944 
+2017-03-12 15:45:15[psd]:  Getting more images 
+2017-03-12 15:45:15[psd]:  Collecting 50 images. 
+2017-03-12 15:45:22[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 15:45:22[psd]:  # iter= 3900 eta= 0.0019258545979779 current error= 19918.214782715 
+2017-03-12 15:45:22[psd]:  Computing Hessian 
+2017-03-12 15:45:22[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 16:11:02[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 16:11:02[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 16:11:02[psd]:  done 
+2017-03-12 16:13:30[psd]:  Getting more images 
+2017-03-12 16:13:30[psd]:  Collecting 50 images. 
+2017-03-12 16:13:36[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 16:13:36[psd]:  # iter= 3950 eta= 0.0019249278152069 current error= 19739.560050964 
+2017-03-12 16:16:04[psd]:  Getting more images 
+2017-03-12 16:16:04[psd]:  Collecting 50 images. 
+2017-03-12 16:16:11[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 16:16:11[psd]:  # iter= 4000 eta= 0.0019240019240019 current error= 19796.239038467 
+2017-03-12 16:16:11[psd]:  Computing Hessian 
+2017-03-12 16:16:11[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 16:41:50[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 16:41:50[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 16:41:50[psd]:  done 
+2017-03-12 16:44:18[psd]:  Getting more images 
+2017-03-12 16:44:18[psd]:  Collecting 50 images. 
+2017-03-12 16:44:24[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 16:44:25[psd]:  # iter= 4050 eta= 0.0019230769230769 current error= 19844.031101227 
+2017-03-12 16:46:52[psd]:  Getting more images 
+2017-03-12 16:46:52[psd]:  Collecting 50 images. 
+2017-03-12 16:46:58[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 16:46:59[psd]:  # iter= 4100 eta= 0.0019221528111485 current error= 19875.693065643 
+2017-03-12 16:46:59[psd]:  Computing Hessian 
+2017-03-12 16:46:59[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 17:12:38[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 17:12:38[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 17:12:38[psd]:  done 
+2017-03-12 17:15:06[psd]:  Getting more images 
+2017-03-12 17:15:06[psd]:  Collecting 50 images. 
+2017-03-12 17:15:12[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 17:15:12[psd]:  # iter= 4150 eta= 0.0019212295869356 current error= 19752.623575211 
+2017-03-12 17:17:40[psd]:  Getting more images 
+2017-03-12 17:17:40[psd]:  Collecting 50 images. 
+2017-03-12 17:17:46[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 17:17:47[psd]:  # iter= 4200 eta= 0.0019203072491599 current error= 19924.79060936 
+2017-03-12 17:17:47[psd]:  Computing Hessian 
+2017-03-12 17:17:47[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 17:43:27[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 17:43:27[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 17:43:27[psd]:  done 
+2017-03-12 17:45:54[psd]:  Getting more images 
+2017-03-12 17:45:54[psd]:  Collecting 50 images. 
+2017-03-12 17:46:01[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 17:46:01[psd]:  # iter= 4250 eta= 0.0019193857965451 current error= 19767.319801331 
+2017-03-12 17:48:29[psd]:  Getting more images 
+2017-03-12 17:48:29[psd]:  Collecting 50 images. 
+2017-03-12 17:48:35[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 17:48:35[psd]:  # iter= 4300 eta= 0.0019184652278177 current error= 19995.462928772 
+2017-03-12 17:48:35[psd]:  Computing Hessian 
+2017-03-12 17:48:35[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 18:14:19[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 18:14:19[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 18:14:19[psd]:  done 
+2017-03-12 18:16:47[psd]:  Getting more images 
+2017-03-12 18:16:47[psd]:  Collecting 50 images. 
+2017-03-12 18:16:53[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 18:16:54[psd]:  # iter= 4350 eta= 0.0019175455417066 current error= 19799.43372345 
+2017-03-12 18:19:21[psd]:  Getting more images 
+2017-03-12 18:19:21[psd]:  Collecting 50 images. 
+2017-03-12 18:19:28[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 18:19:28[psd]:  # iter= 4400 eta= 0.001916626736943 current error= 19933.001466751 
+2017-03-12 18:19:28[psd]:  Computing Hessian 
+2017-03-12 18:19:28[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 18:45:11[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 18:45:11[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 18:45:11[psd]:  done 
+2017-03-12 18:47:40[psd]:  Getting more images 
+2017-03-12 18:47:40[psd]:  Collecting 50 images. 
+2017-03-12 18:47:46[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 18:47:46[psd]:  # iter= 4450 eta= 0.0019157088122605 current error= 19762.591171265 
+2017-03-12 18:50:14[psd]:  Getting more images 
+2017-03-12 18:50:14[psd]:  Collecting 50 images. 
+2017-03-12 18:50:20[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 18:50:21[psd]:  # iter= 4500 eta= 0.0019147917663954 current error= 19798.882642746 
+2017-03-12 18:50:21[psd]:  Computing Hessian 
+2017-03-12 18:50:21[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 19:16:01[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 19:16:01[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 19:16:01[psd]:  done 
+2017-03-12 19:18:29[psd]:  Getting more images 
+2017-03-12 19:18:29[psd]:  Collecting 50 images. 
+2017-03-12 19:18:35[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 19:18:35[psd]:  # iter= 4550 eta= 0.0019138755980861 current error= 19788.055496216 
+2017-03-12 19:21:03[psd]:  Getting more images 
+2017-03-12 19:21:03[psd]:  Collecting 50 images. 
+2017-03-12 19:21:09[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 19:21:10[psd]:  # iter= 4600 eta= 0.0019129603060736 current error= 19822.015607834 
+2017-03-12 19:21:10[psd]:  Computing Hessian 
+2017-03-12 19:21:10[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 19:46:50[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 19:46:50[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 19:46:50[psd]:  done 
+2017-03-12 19:49:18[psd]:  Getting more images 
+2017-03-12 19:49:18[psd]:  Collecting 50 images. 
+2017-03-12 19:49:24[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 19:49:24[psd]:  # iter= 4650 eta= 0.0019120458891013 current error= 19823.52599144 
+2017-03-12 19:51:52[psd]:  Getting more images 
+2017-03-12 19:51:52[psd]:  Collecting 50 images. 
+2017-03-12 19:51:59[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 19:51:59[psd]:  # iter= 4700 eta= 0.001911132345915 current error= 19685.714765549 
+2017-03-12 19:51:59[psd]:  Computing Hessian 
+2017-03-12 19:51:59[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 20:17:42[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 20:17:42[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 20:17:42[psd]:  done 
+2017-03-12 20:20:10[psd]:  Getting more images 
+2017-03-12 20:20:10[psd]:  Collecting 50 images. 
+2017-03-12 20:20:16[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 20:20:16[psd]:  # iter= 4750 eta= 0.0019102196752627 current error= 19960.942640305 
+2017-03-12 20:22:44[psd]:  Getting more images 
+2017-03-12 20:22:44[psd]:  Collecting 50 images. 
+2017-03-12 20:22:51[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 20:22:51[psd]:  # iter= 4800 eta= 0.001909307875895 current error= 19985.690658569 
+2017-03-12 20:22:51[psd]:  Computing Hessian 
+2017-03-12 20:22:51[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 20:48:33[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 20:48:33[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 20:48:33[psd]:  done 
+2017-03-12 20:51:01[psd]:  Getting more images 
+2017-03-12 20:51:01[psd]:  Collecting 50 images. 
+2017-03-12 20:51:07[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 20:51:07[psd]:  # iter= 4850 eta= 0.0019083969465649 current error= 19923.207054138 
+2017-03-12 20:53:35[psd]:  Getting more images 
+2017-03-12 20:53:35[psd]:  Collecting 50 images. 
+2017-03-12 20:53:41[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 20:53:42[psd]:  # iter= 4900 eta= 0.0019074868860277 current error= 19911.466154099 
+2017-03-12 20:53:42[psd]:  Computing Hessian 
+2017-03-12 20:53:42[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 21:19:22[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 21:19:22[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 21:19:22[psd]:  done 
+2017-03-12 21:21:50[psd]:  Getting more images 
+2017-03-12 21:21:50[psd]:  Collecting 50 images. 
+2017-03-12 21:21:56[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 21:21:56[psd]:  # iter= 4950 eta= 0.001906577693041 current error= 20014.145103455 
+2017-03-12 21:24:24[psd]:  Getting more images 
+2017-03-12 21:24:24[psd]:  Collecting 50 images. 
+2017-03-12 21:24:30[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 21:24:31[psd]:  # iter= 5000 eta= 0.0019056693663649 current error= 19781.825590134 
+2017-03-12 21:24:31[psd]:  Computing Hessian 
+2017-03-12 21:24:31[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 21:50:09[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 21:50:09[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 21:50:09[psd]:  done 
+2017-03-12 21:52:37[psd]:  Getting more images 
+2017-03-12 21:52:37[psd]:  Collecting 50 images. 
+2017-03-12 21:52:43[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 21:52:44[psd]:  # iter= 5050 eta= 0.0019047619047619 current error= 19866.825191498 
+2017-03-12 21:55:11[psd]:  Getting more images 
+2017-03-12 21:55:11[psd]:  Collecting 50 images. 
+2017-03-12 21:55:17[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 21:55:18[psd]:  # iter= 5100 eta= 0.0019038553069967 current error= 19776.17117691 
+2017-03-12 21:55:18[psd]:  Computing Hessian 
+2017-03-12 21:55:18[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 22:20:58[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 22:20:58[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 22:20:58[psd]:  done 
+2017-03-12 22:23:26[psd]:  Getting more images 
+2017-03-12 22:23:26[psd]:  Collecting 50 images. 
+2017-03-12 22:23:32[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 22:23:32[psd]:  # iter= 5150 eta= 0.0019029495718363 current error= 19619.931180954 
+2017-03-12 22:26:00[psd]:  Getting more images 
+2017-03-12 22:26:00[psd]:  Collecting 50 images. 
+2017-03-12 22:26:06[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 22:26:06[psd]:  # iter= 5200 eta= 0.0019020446980504 current error= 19736.973499298 
+2017-03-12 22:26:06[psd]:  Computing Hessian 
+2017-03-12 22:26:06[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 22:51:45[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 22:51:45[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 22:51:45[psd]:  done 
+2017-03-12 22:54:12[psd]:  Getting more images 
+2017-03-12 22:54:12[psd]:  Collecting 50 images. 
+2017-03-12 22:54:19[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 22:54:19[psd]:  # iter= 5250 eta= 0.0019011406844106 current error= 19674.604524612 
+2017-03-12 22:56:47[psd]:  Getting more images 
+2017-03-12 22:56:47[psd]:  Collecting 50 images. 
+2017-03-12 22:56:53[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 22:56:53[psd]:  # iter= 5300 eta= 0.0019002375296912 current error= 19686.768188477 
+2017-03-12 22:56:53[psd]:  Computing Hessian 
+2017-03-12 22:56:53[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 23:22:33[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 23:22:33[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 23:22:33[psd]:  done 
+2017-03-12 23:25:01[psd]:  Getting more images 
+2017-03-12 23:25:01[psd]:  Collecting 50 images. 
+2017-03-12 23:25:07[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 23:25:07[psd]:  # iter= 5350 eta= 0.0018993352326686 current error= 19799.60669136 
+2017-03-12 23:27:35[psd]:  Getting more images 
+2017-03-12 23:27:35[psd]:  Collecting 50 images. 
+2017-03-12 23:27:41[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 23:27:42[psd]:  # iter= 5400 eta= 0.0018984337921215 current error= 19889.593399048 
+2017-03-12 23:27:42[psd]:  Computing Hessian 
+2017-03-12 23:27:42[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-12 23:53:20[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-12 23:53:20[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-12 23:53:20[psd]:  done 
+2017-03-12 23:55:48[psd]:  Getting more images 
+2017-03-12 23:55:48[psd]:  Collecting 50 images. 
+2017-03-12 23:55:54[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 23:55:55[psd]:  # iter= 5450 eta= 0.0018975332068311 current error= 19871.127883911 
+2017-03-12 23:58:22[psd]:  Getting more images 
+2017-03-12 23:58:22[psd]:  Collecting 50 images. 
+2017-03-12 23:58:29[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-12 23:58:29[psd]:  # iter= 5500 eta= 0.0018966334755808 current error= 19922.147375107 
+2017-03-12 23:58:29[psd]:  Computing Hessian 
+2017-03-12 23:58:29[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 00:24:09[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 00:24:09[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 00:24:09[psd]:  done 
+2017-03-13 00:26:36[psd]:  Getting more images 
+2017-03-13 00:26:36[psd]:  Collecting 50 images. 
+2017-03-13 00:26:43[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 00:26:43[psd]:  # iter= 5550 eta= 0.0018957345971564 current error= 19931.939403534 
+2017-03-13 00:29:11[psd]:  Getting more images 
+2017-03-13 00:29:11[psd]:  Collecting 50 images. 
+2017-03-13 00:29:17[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 00:29:17[psd]:  # iter= 5600 eta= 0.0018948365703458 current error= 19838.071268082 
+2017-03-13 00:29:17[psd]:  Computing Hessian 
+2017-03-13 00:29:17[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 00:54:57[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 00:54:57[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 00:54:57[psd]:  done 
+2017-03-13 00:57:24[psd]:  Getting more images 
+2017-03-13 00:57:24[psd]:  Collecting 50 images. 
+2017-03-13 00:57:31[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 00:57:31[psd]:  # iter= 5650 eta= 0.0018939393939394 current error= 19972.457710266 
+2017-03-13 00:59:59[psd]:  Getting more images 
+2017-03-13 00:59:59[psd]:  Collecting 50 images. 
+2017-03-13 01:00:05[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 01:00:06[psd]:  # iter= 5700 eta= 0.0018930430667298 current error= 19915.398498535 
+2017-03-13 01:00:06[psd]:  Computing Hessian 
+2017-03-13 01:00:06[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 01:25:48[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 01:25:48[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 01:25:48[psd]:  done 
+2017-03-13 01:28:15[psd]:  Getting more images 
+2017-03-13 01:28:15[psd]:  Collecting 50 images. 
+2017-03-13 01:28:21[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 01:28:21[psd]:  # iter= 5750 eta= 0.0018921475875118 current error= 19882.519386292 
+2017-03-13 01:30:49[psd]:  Getting more images 
+2017-03-13 01:30:49[psd]:  Collecting 50 images. 
+2017-03-13 01:30:55[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 01:30:56[psd]:  # iter= 5800 eta= 0.0018912529550827 current error= 19919.812309265 
+2017-03-13 01:30:56[psd]:  Computing Hessian 
+2017-03-13 01:30:56[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 01:56:35[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 01:56:35[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 01:56:35[psd]:  done 
+2017-03-13 01:59:02[psd]:  Getting more images 
+2017-03-13 01:59:02[psd]:  Collecting 50 images. 
+2017-03-13 01:59:09[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 01:59:09[psd]:  # iter= 5850 eta= 0.001890359168242 current error= 19908.991697311 
+2017-03-13 02:01:37[psd]:  Getting more images 
+2017-03-13 02:01:37[psd]:  Collecting 50 images. 
+2017-03-13 02:01:43[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 02:01:43[psd]:  # iter= 5900 eta= 0.0018894662257912 current error= 19941.527803421 
+2017-03-13 02:01:43[psd]:  Computing Hessian 
+2017-03-13 02:01:43[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 02:27:22[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 02:27:22[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 02:27:22[psd]:  done 
+2017-03-13 02:29:50[psd]:  Getting more images 
+2017-03-13 02:29:50[psd]:  Collecting 50 images. 
+2017-03-13 02:29:56[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 02:29:57[psd]:  # iter= 5950 eta= 0.0018885741265345 current error= 19951.851009369 
+2017-03-13 02:32:25[psd]:  Getting more images 
+2017-03-13 02:32:25[psd]:  Collecting 50 images. 
+2017-03-13 02:32:31[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 02:32:32[psd]:  # iter= 6000 eta= 0.001887682869278 current error= 19955.271434784 
+2017-03-13 02:32:32[psd]:  Computing Hessian 
+2017-03-13 02:32:32[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 02:58:15[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 02:58:15[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 02:58:15[psd]:  done 
+2017-03-13 03:00:43[psd]:  Getting more images 
+2017-03-13 03:00:43[psd]:  Collecting 50 images. 
+2017-03-13 03:00:50[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 03:00:50[psd]:  # iter= 6050 eta= 0.0018867924528302 current error= 19932.791898727 
+2017-03-13 03:03:18[psd]:  Getting more images 
+2017-03-13 03:03:18[psd]:  Collecting 50 images. 
+2017-03-13 03:03:24[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 03:03:25[psd]:  # iter= 6100 eta= 0.0018859028760019 current error= 19870.927194595 
+2017-03-13 03:03:25[psd]:  Computing Hessian 
+2017-03-13 03:03:25[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 03:29:04[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 03:29:04[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 03:29:04[psd]:  done 
+2017-03-13 03:31:32[psd]:  Getting more images 
+2017-03-13 03:31:32[psd]:  Collecting 50 images. 
+2017-03-13 03:31:38[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 03:31:38[psd]:  # iter= 6150 eta= 0.001885014137606 current error= 19782.210330963 
+2017-03-13 03:34:06[psd]:  Getting more images 
+2017-03-13 03:34:06[psd]:  Collecting 50 images. 
+2017-03-13 03:34:12[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 03:34:13[psd]:  # iter= 6200 eta= 0.0018841262364578 current error= 19840.491792679 
+2017-03-13 03:34:13[psd]:  Computing Hessian 
+2017-03-13 03:34:13[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 03:59:53[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 03:59:53[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 03:59:53[psd]:  done 
+2017-03-13 04:02:21[psd]:  Getting more images 
+2017-03-13 04:02:21[psd]:  Collecting 50 images. 
+2017-03-13 04:02:27[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 04:02:27[psd]:  # iter= 6250 eta= 0.0018832391713748 current error= 19833.221279144 
+2017-03-13 04:04:55[psd]:  Getting more images 
+2017-03-13 04:04:55[psd]:  Collecting 50 images. 
+2017-03-13 04:05:01[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 04:05:02[psd]:  # iter= 6300 eta= 0.0018823529411765 current error= 19932.019378662 
+2017-03-13 04:05:02[psd]:  Computing Hessian 
+2017-03-13 04:05:02[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 04:30:39[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 04:30:39[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 04:30:39[psd]:  done 
+2017-03-13 04:33:07[psd]:  Getting more images 
+2017-03-13 04:33:07[psd]:  Collecting 50 images. 
+2017-03-13 04:33:13[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 04:33:13[psd]:  # iter= 6350 eta= 0.0018814675446849 current error= 19922.201097488 
+2017-03-13 04:35:41[psd]:  Getting more images 
+2017-03-13 04:35:41[psd]:  Collecting 50 images. 
+2017-03-13 04:35:47[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 04:35:48[psd]:  # iter= 6400 eta= 0.001880582980724 current error= 19969.448274612 
+2017-03-13 04:35:48[psd]:  Computing Hessian 
+2017-03-13 04:35:48[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 05:01:28[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 05:01:28[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 05:01:28[psd]:  done 
+2017-03-13 05:03:56[psd]:  Getting more images 
+2017-03-13 05:03:56[psd]:  Collecting 50 images. 
+2017-03-13 05:04:02[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 05:04:02[psd]:  # iter= 6450 eta= 0.0018796992481203 current error= 19983.547109604 
+2017-03-13 05:06:30[psd]:  Getting more images 
+2017-03-13 05:06:30[psd]:  Collecting 50 images. 
+2017-03-13 05:06:36[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 05:06:37[psd]:  # iter= 6500 eta= 0.0018788163457022 current error= 19911.645219803 
+2017-03-13 05:06:37[psd]:  Computing Hessian 
+2017-03-13 05:06:37[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 05:32:16[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 05:32:16[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 05:32:16[psd]:  done 
+2017-03-13 05:34:43[psd]:  Getting more images 
+2017-03-13 05:34:43[psd]:  Collecting 50 images. 
+2017-03-13 05:34:49[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 05:34:49[psd]:  # iter= 6550 eta= 0.0018779342723005 current error= 19916.736493111 
+2017-03-13 05:37:17[psd]:  Getting more images 
+2017-03-13 05:37:17[psd]:  Collecting 50 images. 
+2017-03-13 05:37:23[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 05:37:24[psd]:  # iter= 6600 eta= 0.001877053026748 current error= 19857.353832245 
+2017-03-13 05:37:24[psd]:  Computing Hessian 
+2017-03-13 05:37:24[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 06:03:04[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 06:03:04[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 06:03:04[psd]:  done 
+2017-03-13 06:05:32[psd]:  Getting more images 
+2017-03-13 06:05:32[psd]:  Collecting 50 images. 
+2017-03-13 06:05:39[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 06:05:39[psd]:  # iter= 6650 eta= 0.0018761726078799 current error= 19834.610908508 
+2017-03-13 06:08:07[psd]:  Getting more images 
+2017-03-13 06:08:07[psd]:  Collecting 50 images. 
+2017-03-13 06:08:13[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 06:08:14[psd]:  # iter= 6700 eta= 0.0018752930145335 current error= 19901.952764511 
+2017-03-13 06:08:14[psd]:  Computing Hessian 
+2017-03-13 06:08:14[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 06:33:55[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 06:33:55[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 06:33:55[psd]:  done 
+2017-03-13 06:36:23[psd]:  Getting more images 
+2017-03-13 06:36:23[psd]:  Collecting 50 images. 
+2017-03-13 06:36:29[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 06:36:30[psd]:  # iter= 6750 eta= 0.0018744142455483 current error= 19969.897266388 
+2017-03-13 06:38:58[psd]:  Getting more images 
+2017-03-13 06:38:58[psd]:  Collecting 50 images. 
+2017-03-13 06:39:04[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 06:39:04[psd]:  # iter= 6800 eta= 0.0018735362997658 current error= 19895.301710129 
+2017-03-13 06:39:04[psd]:  Computing Hessian 
+2017-03-13 06:39:04[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 07:04:45[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 07:04:45[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 07:04:45[psd]:  done 
+2017-03-13 07:07:12[psd]:  Getting more images 
+2017-03-13 07:07:12[psd]:  Collecting 50 images. 
+2017-03-13 07:07:19[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 07:07:19[psd]:  # iter= 6850 eta= 0.00187265917603 current error= 19618.246471405 
+2017-03-13 07:09:47[psd]:  Getting more images 
+2017-03-13 07:09:47[psd]:  Collecting 50 images. 
+2017-03-13 07:09:53[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 07:09:53[psd]:  # iter= 6900 eta= 0.0018717828731867 current error= 19753.002717972 
+2017-03-13 07:09:53[psd]:  Computing Hessian 
+2017-03-13 07:09:53[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 07:35:31[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 07:35:31[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 07:35:31[psd]:  done 
+2017-03-13 07:37:59[psd]:  Getting more images 
+2017-03-13 07:37:59[psd]:  Collecting 50 images. 
+2017-03-13 07:38:05[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 07:38:05[psd]:  # iter= 6950 eta= 0.0018709073900842 current error= 19985.851299286 
+2017-03-13 07:40:33[psd]:  Getting more images 
+2017-03-13 07:40:33[psd]:  Collecting 50 images. 
+2017-03-13 07:40:39[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 07:40:39[psd]:  # iter= 7000 eta= 0.0018700327255727 current error= 19871.493867874 
+2017-03-13 07:40:39[psd]:  Computing Hessian 
+2017-03-13 07:40:39[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 08:06:20[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 08:06:20[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 08:06:20[psd]:  done 
+2017-03-13 08:08:48[psd]:  Getting more images 
+2017-03-13 08:08:48[psd]:  Collecting 50 images. 
+2017-03-13 08:08:54[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 08:08:55[psd]:  # iter= 7050 eta= 0.0018691588785047 current error= 19728.16627121 
+2017-03-13 08:11:22[psd]:  Getting more images 
+2017-03-13 08:11:22[psd]:  Collecting 50 images. 
+2017-03-13 08:11:29[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 08:11:29[psd]:  # iter= 7100 eta= 0.0018682858477347 current error= 19660.82526207 
+2017-03-13 08:11:29[psd]:  Computing Hessian 
+2017-03-13 08:11:29[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 08:37:08[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 08:37:08[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 08:37:08[psd]:  done 
+2017-03-13 08:39:36[psd]:  Getting more images 
+2017-03-13 08:39:36[psd]:  Collecting 50 images. 
+2017-03-13 08:39:42[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 08:39:43[psd]:  # iter= 7150 eta= 0.0018674136321195 current error= 19666.142152786 
+2017-03-13 08:42:10[psd]:  Getting more images 
+2017-03-13 08:42:10[psd]:  Collecting 50 images. 
+2017-03-13 08:42:17[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 08:42:17[psd]:  # iter= 7200 eta= 0.001866542230518 current error= 19833.08020401 
+2017-03-13 08:42:17[psd]:  Computing Hessian 
+2017-03-13 08:42:17[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 09:07:59[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 09:07:59[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 09:07:59[psd]:  done 
+2017-03-13 09:10:27[psd]:  Getting more images 
+2017-03-13 09:10:27[psd]:  Collecting 50 images. 
+2017-03-13 09:10:33[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 09:10:33[psd]:  # iter= 7250 eta= 0.001865671641791 current error= 19891.918058395 
+2017-03-13 09:13:01[psd]:  Getting more images 
+2017-03-13 09:13:01[psd]:  Collecting 50 images. 
+2017-03-13 09:13:07[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 09:13:08[psd]:  # iter= 7300 eta= 0.0018648018648019 current error= 19953.101476669 
+2017-03-13 09:13:08[psd]:  Computing Hessian 
+2017-03-13 09:13:08[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 09:38:48[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 09:38:48[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 09:38:48[psd]:  done 
+2017-03-13 09:41:16[psd]:  Getting more images 
+2017-03-13 09:41:16[psd]:  Collecting 50 images. 
+2017-03-13 09:41:22[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 09:41:22[psd]:  # iter= 7350 eta= 0.0018639328984157 current error= 19855.175786972 
+2017-03-13 09:43:50[psd]:  Getting more images 
+2017-03-13 09:43:50[psd]:  Collecting 50 images. 
+2017-03-13 09:43:57[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 09:43:57[psd]:  # iter= 7400 eta= 0.0018630647414998 current error= 19919.9265728 
+2017-03-13 09:43:57[psd]:  Computing Hessian 
+2017-03-13 09:43:57[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 10:09:37[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 10:09:37[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 10:09:37[psd]:  done 
+2017-03-13 10:12:05[psd]:  Getting more images 
+2017-03-13 10:12:05[psd]:  Collecting 50 images. 
+2017-03-13 10:12:11[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 10:12:11[psd]:  # iter= 7450 eta= 0.0018621973929236 current error= 19939.417257309 
+2017-03-13 10:14:39[psd]:  Getting more images 
+2017-03-13 10:14:39[psd]:  Collecting 50 images. 
+2017-03-13 10:14:45[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 10:14:46[psd]:  # iter= 7500 eta= 0.0018613308515589 current error= 20032.408668518 
+2017-03-13 10:14:46[psd]:  Computing Hessian 
+2017-03-13 10:14:46[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 10:40:24[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 10:40:24[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 10:40:24[psd]:  done 
+2017-03-13 10:42:52[psd]:  Getting more images 
+2017-03-13 10:42:52[psd]:  Collecting 50 images. 
+2017-03-13 10:42:58[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 10:42:59[psd]:  # iter= 7550 eta= 0.0018604651162791 current error= 19883.40858078 
+2017-03-13 10:45:26[psd]:  Getting more images 
+2017-03-13 10:45:26[psd]:  Collecting 50 images. 
+2017-03-13 10:45:33[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 10:45:33[psd]:  # iter= 7600 eta= 0.00185960018596 current error= 19913.626384735 
+2017-03-13 10:45:33[psd]:  Computing Hessian 
+2017-03-13 10:45:33[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 11:11:13[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 11:11:13[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 11:11:13[psd]:  done 
+2017-03-13 11:13:41[psd]:  Getting more images 
+2017-03-13 11:13:41[psd]:  Collecting 50 images. 
+2017-03-13 11:13:48[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 11:13:48[psd]:  # iter= 7650 eta= 0.0018587360594796 current error= 19855.050287247 
+2017-03-13 11:16:14[psd]:  Getting more images 
+2017-03-13 11:16:14[psd]:  Collecting 50 images. 
+2017-03-13 11:16:20[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 11:16:21[psd]:  # iter= 7700 eta= 0.0018578727357176 current error= 19946.396017075 
+2017-03-13 11:16:21[psd]:  Computing Hessian 
+2017-03-13 11:16:21[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 11:42:01[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 11:42:01[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 11:42:01[psd]:  done 
+2017-03-13 11:44:29[psd]:  Getting more images 
+2017-03-13 11:44:29[psd]:  Collecting 50 images. 
+2017-03-13 11:44:35[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 11:44:36[psd]:  # iter= 7750 eta= 0.0018570102135562 current error= 19990.631441116 
+2017-03-13 11:47:03[psd]:  Getting more images 
+2017-03-13 11:47:03[psd]:  Collecting 50 images. 
+2017-03-13 11:47:10[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 11:47:10[psd]:  # iter= 7800 eta= 0.0018561484918794 current error= 19948.558849335 
+2017-03-13 11:47:10[psd]:  Computing Hessian 
+2017-03-13 11:47:10[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 12:12:50[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 12:12:50[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 12:12:50[psd]:  done 
+2017-03-13 12:15:18[psd]:  Getting more images 
+2017-03-13 12:15:18[psd]:  Collecting 50 images. 
+2017-03-13 12:15:24[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 12:15:25[psd]:  # iter= 7850 eta= 0.0018552875695733 current error= 19898.416162491 
+2017-03-13 12:17:52[psd]:  Getting more images 
+2017-03-13 12:17:52[psd]:  Collecting 50 images. 
+2017-03-13 12:17:59[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 12:17:59[psd]:  # iter= 7900 eta= 0.0018544274455262 current error= 19894.711578369 
+2017-03-13 12:17:59[psd]:  Computing Hessian 
+2017-03-13 12:17:59[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 12:43:41[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 12:43:41[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 12:43:41[psd]:  done 
+2017-03-13 12:46:07[psd]:  Getting more images 
+2017-03-13 12:46:07[psd]:  Collecting 50 images. 
+2017-03-13 12:46:13[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 12:46:14[psd]:  # iter= 7950 eta= 0.0018535681186284 current error= 19970.283680916 
+2017-03-13 12:48:42[psd]:  Getting more images 
+2017-03-13 12:48:42[psd]:  Collecting 50 images. 
+2017-03-13 12:48:48[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 12:48:48[psd]:  # iter= 8000 eta= 0.0018527095877721 current error= 19841.006259918 
+2017-03-13 12:48:48[psd]:  Computing Hessian 
+2017-03-13 12:48:48[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 13:14:28[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 13:14:28[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 13:14:28[psd]:  done 
+2017-03-13 13:16:56[psd]:  Getting more images 
+2017-03-13 13:16:56[psd]:  Collecting 50 images. 
+2017-03-13 13:17:03[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 13:17:03[psd]:  # iter= 8050 eta= 0.0018518518518519 current error= 19789.945408821 
+2017-03-13 13:19:31[psd]:  Getting more images 
+2017-03-13 13:19:31[psd]:  Collecting 50 images. 
+2017-03-13 13:19:37[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 13:19:37[psd]:  # iter= 8100 eta= 0.001850994909764 current error= 19770.786761284 
+2017-03-13 13:19:37[psd]:  Computing Hessian 
+2017-03-13 13:19:37[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 13:45:18[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 13:45:18[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 13:45:18[psd]:  done 
+2017-03-13 13:47:46[psd]:  Getting more images 
+2017-03-13 13:47:46[psd]:  Collecting 50 images. 
+2017-03-13 13:47:52[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 13:47:53[psd]:  # iter= 8150 eta= 0.001850138760407 current error= 19873.734352112 
+2017-03-13 13:50:20[psd]:  Getting more images 
+2017-03-13 13:50:20[psd]:  Collecting 50 images. 
+2017-03-13 13:50:27[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 13:50:27[psd]:  # iter= 8200 eta= 0.0018492834026815 current error= 19934.675052643 
+2017-03-13 13:50:27[psd]:  Computing Hessian 
+2017-03-13 13:50:27[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 14:16:06[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 14:16:06[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 14:16:06[psd]:  done 
+2017-03-13 14:18:33[psd]:  Getting more images 
+2017-03-13 14:18:33[psd]:  Collecting 50 images. 
+2017-03-13 14:18:40[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 14:18:40[psd]:  # iter= 8250 eta= 0.0018484288354898 current error= 20008.422264099 
+2017-03-13 14:21:08[psd]:  Getting more images 
+2017-03-13 14:21:08[psd]:  Collecting 50 images. 
+2017-03-13 14:21:14[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 14:21:15[psd]:  # iter= 8300 eta= 0.0018475750577367 current error= 19918.515712738 
+2017-03-13 14:21:15[psd]:  Computing Hessian 
+2017-03-13 14:21:15[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 14:46:56[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 14:46:56[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 14:46:56[psd]:  done 
+2017-03-13 14:49:24[psd]:  Getting more images 
+2017-03-13 14:49:24[psd]:  Collecting 50 images. 
+2017-03-13 14:49:30[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 14:49:31[psd]:  # iter= 8350 eta= 0.0018467220683287 current error= 19566.134080887 
+2017-03-13 14:51:58[psd]:  Getting more images 
+2017-03-13 14:51:58[psd]:  Collecting 50 images. 
+2017-03-13 14:52:05[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 14:52:05[psd]:  # iter= 8400 eta= 0.0018458698661744 current error= 19756.438691139 
+2017-03-13 14:52:05[psd]:  Computing Hessian 
+2017-03-13 14:52:05[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 15:17:44[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 15:17:44[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 15:17:44[psd]:  done 
+2017-03-13 15:20:11[psd]:  Getting more images 
+2017-03-13 15:20:11[psd]:  Collecting 50 images. 
+2017-03-13 15:20:18[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 15:20:18[psd]:  # iter= 8450 eta= 0.0018450184501845 current error= 19957.2051754 
+2017-03-13 15:22:46[psd]:  Getting more images 
+2017-03-13 15:22:46[psd]:  Collecting 50 images. 
+2017-03-13 15:22:52[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 15:22:53[psd]:  # iter= 8500 eta= 0.0018441678192716 current error= 19901.786348343 
+2017-03-13 15:22:53[psd]:  Computing Hessian 
+2017-03-13 15:22:53[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 15:48:33[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 15:48:33[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 15:48:33[psd]:  done 
+2017-03-13 15:51:00[psd]:  Getting more images 
+2017-03-13 15:51:00[psd]:  Collecting 50 images. 
+2017-03-13 15:51:07[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 15:51:07[psd]:  # iter= 8550 eta= 0.0018433179723502 current error= 19927.869024277 
+2017-03-13 15:53:35[psd]:  Getting more images 
+2017-03-13 15:53:35[psd]:  Collecting 50 images. 
+2017-03-13 15:53:42[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 15:53:42[psd]:  # iter= 8600 eta= 0.0018424689083372 current error= 19844.661987305 
+2017-03-13 15:53:42[psd]:  Computing Hessian 
+2017-03-13 15:53:42[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 16:19:18[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 16:19:18[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 16:19:18[psd]:  done 
+2017-03-13 16:21:46[psd]:  Getting more images 
+2017-03-13 16:21:46[psd]:  Collecting 50 images. 
+2017-03-13 16:21:52[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 16:21:53[psd]:  # iter= 8650 eta= 0.001841620626151 current error= 19909.751441956 
+2017-03-13 16:24:21[psd]:  Getting more images 
+2017-03-13 16:24:21[psd]:  Collecting 50 images. 
+2017-03-13 16:24:27[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 16:24:28[psd]:  # iter= 8700 eta= 0.0018407731247124 current error= 19878.447816849 
+2017-03-13 16:24:28[psd]:  Computing Hessian 
+2017-03-13 16:24:28[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 16:50:08[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 16:50:08[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 16:50:08[psd]:  done 
+2017-03-13 16:52:35[psd]:  Getting more images 
+2017-03-13 16:52:35[psd]:  Collecting 50 images. 
+2017-03-13 16:52:41[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 16:52:41[psd]:  # iter= 8750 eta= 0.0018399264029439 current error= 19717.179049492 
+2017-03-13 16:55:09[psd]:  Getting more images 
+2017-03-13 16:55:09[psd]:  Collecting 50 images. 
+2017-03-13 16:55:15[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 16:55:16[psd]:  # iter= 8800 eta= 0.0018390804597701 current error= 19935.248083115 
+2017-03-13 16:55:16[psd]:  Computing Hessian 
+2017-03-13 16:55:16[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 17:20:56[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 17:20:56[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 17:20:56[psd]:  done 
+2017-03-13 17:23:24[psd]:  Getting more images 
+2017-03-13 17:23:24[psd]:  Collecting 50 images. 
+2017-03-13 17:23:30[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 17:23:31[psd]:  # iter= 8850 eta= 0.0018382352941176 current error= 19821.038265228 
+2017-03-13 17:25:57[psd]:  Getting more images 
+2017-03-13 17:25:57[psd]:  Collecting 50 images. 
+2017-03-13 17:26:04[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 17:26:04[psd]:  # iter= 8900 eta= 0.001837390904915 current error= 19607.123957634 
+2017-03-13 17:26:04[psd]:  Computing Hessian 
+2017-03-13 17:26:04[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 17:51:41[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 17:51:41[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 17:51:41[psd]:  done 
+2017-03-13 17:54:09[psd]:  Getting more images 
+2017-03-13 17:54:09[psd]:  Collecting 50 images. 
+2017-03-13 17:54:15[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 17:54:16[psd]:  # iter= 8950 eta= 0.0018365472910927 current error= 19888.707307816 
+2017-03-13 17:56:43[psd]:  Getting more images 
+2017-03-13 17:56:43[psd]:  Collecting 50 images. 
+2017-03-13 17:56:50[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 17:56:50[psd]:  # iter= 9000 eta= 0.0018357044515833 current error= 19925.026937485 
+2017-03-13 17:56:50[psd]:  Computing Hessian 
+2017-03-13 17:56:50[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 18:22:32[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 18:22:32[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 18:22:32[psd]:  done 
+2017-03-13 18:24:59[psd]:  Getting more images 
+2017-03-13 18:24:59[psd]:  Collecting 50 images. 
+2017-03-13 18:25:06[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 18:25:06[psd]:  # iter= 9050 eta= 0.0018348623853211 current error= 19983.267871857 
+2017-03-13 18:27:34[psd]:  Getting more images 
+2017-03-13 18:27:34[psd]:  Collecting 50 images. 
+2017-03-13 18:27:40[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 18:27:41[psd]:  # iter= 9100 eta= 0.0018340210912425 current error= 19909.313591003 
+2017-03-13 18:27:41[psd]:  Computing Hessian 
+2017-03-13 18:27:41[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 18:53:21[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 18:53:21[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 18:53:21[psd]:  done 
+2017-03-13 18:55:49[psd]:  Getting more images 
+2017-03-13 18:55:49[psd]:  Collecting 50 images. 
+2017-03-13 18:55:55[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 18:55:56[psd]:  # iter= 9150 eta= 0.001833180568286 current error= 19796.7302742 
+2017-03-13 18:58:24[psd]:  Getting more images 
+2017-03-13 18:58:24[psd]:  Collecting 50 images. 
+2017-03-13 18:58:30[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 18:58:30[psd]:  # iter= 9200 eta= 0.0018323408153917 current error= 19857.311254501 
+2017-03-13 18:58:30[psd]:  Computing Hessian 
+2017-03-13 18:58:30[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 19:24:13[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 19:24:13[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 19:24:13[psd]:  done 
+2017-03-13 19:26:41[psd]:  Getting more images 
+2017-03-13 19:26:41[psd]:  Collecting 50 images. 
+2017-03-13 19:26:47[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 19:26:48[psd]:  # iter= 9250 eta= 0.0018315018315018 current error= 19884.925943375 
+2017-03-13 19:29:15[psd]:  Getting more images 
+2017-03-13 19:29:15[psd]:  Collecting 50 images. 
+2017-03-13 19:29:22[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 19:29:22[psd]:  # iter= 9300 eta= 0.0018306636155606 current error= 19962.739032745 
+2017-03-13 19:29:22[psd]:  Computing Hessian 
+2017-03-13 19:29:22[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 19:55:01[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 19:55:01[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 19:55:01[psd]:  done 
+2017-03-13 19:57:29[psd]:  Getting more images 
+2017-03-13 19:57:29[psd]:  Collecting 50 images. 
+2017-03-13 19:57:35[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 19:57:35[psd]:  # iter= 9350 eta= 0.0018298261665142 current error= 19885.561601639 
+2017-03-13 20:00:03[psd]:  Getting more images 
+2017-03-13 20:00:03[psd]:  Collecting 50 images. 
+2017-03-13 20:00:09[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 20:00:10[psd]:  # iter= 9400 eta= 0.0018289894833105 current error= 19769.610281944 
+2017-03-13 20:00:10[psd]:  Computing Hessian 
+2017-03-13 20:00:10[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 20:25:50[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 20:25:50[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 20:25:50[psd]:  done 
+2017-03-13 20:28:18[psd]:  Getting more images 
+2017-03-13 20:28:18[psd]:  Collecting 50 images. 
+2017-03-13 20:28:24[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 20:28:24[psd]:  # iter= 9450 eta= 0.0018281535648995 current error= 19726.153783798 
+2017-03-13 20:30:51[psd]:  Getting more images 
+2017-03-13 20:30:51[psd]:  Collecting 50 images. 
+2017-03-13 20:30:58[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 20:30:58[psd]:  # iter= 9500 eta= 0.001827318410233 current error= 19635.210891724 
+2017-03-13 20:30:58[psd]:  Computing Hessian 
+2017-03-13 20:30:58[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 20:56:38[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 20:56:38[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 20:56:38[psd]:  done 
+2017-03-13 20:59:06[psd]:  Getting more images 
+2017-03-13 20:59:06[psd]:  Collecting 50 images. 
+2017-03-13 20:59:13[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 20:59:13[psd]:  # iter= 9550 eta= 0.0018264840182648 current error= 19896.052210808 
+2017-03-13 21:01:41[psd]:  Getting more images 
+2017-03-13 21:01:41[psd]:  Collecting 50 images. 
+2017-03-13 21:01:47[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 21:01:47[psd]:  # iter= 9600 eta= 0.0018256503879507 current error= 19891.488819122 
+2017-03-13 21:01:47[psd]:  Computing Hessian 
+2017-03-13 21:01:47[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 21:27:31[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 21:27:31[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 21:27:31[psd]:  done 
+2017-03-13 21:29:59[psd]:  Getting more images 
+2017-03-13 21:29:59[psd]:  Collecting 50 images. 
+2017-03-13 21:30:06[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 21:30:06[psd]:  # iter= 9650 eta= 0.0018248175182482 current error= 19997.55497551 
+2017-03-13 21:32:34[psd]:  Getting more images 
+2017-03-13 21:32:34[psd]:  Collecting 50 images. 
+2017-03-13 21:32:40[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 21:32:41[psd]:  # iter= 9700 eta= 0.0018239854081167 current error= 19922.384790421 
+2017-03-13 21:32:41[psd]:  Computing Hessian 
+2017-03-13 21:32:41[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 21:58:19[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 21:58:19[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 21:58:19[psd]:  done 
+2017-03-13 22:00:47[psd]:  Getting more images 
+2017-03-13 22:00:47[psd]:  Collecting 50 images. 
+2017-03-13 22:00:54[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 22:00:54[psd]:  # iter= 9750 eta= 0.0018231540565178 current error= 19910.480962753 
+2017-03-13 22:03:22[psd]:  Getting more images 
+2017-03-13 22:03:22[psd]:  Collecting 50 images. 
+2017-03-13 22:03:28[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 22:03:29[psd]:  # iter= 9800 eta= 0.0018223234624146 current error= 19897.740003586 
+2017-03-13 22:03:29[psd]:  Computing Hessian 
+2017-03-13 22:03:29[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 22:29:11[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 22:29:11[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 22:29:11[psd]:  done 
+2017-03-13 22:31:38[psd]:  Getting more images 
+2017-03-13 22:31:38[psd]:  Collecting 50 images. 
+2017-03-13 22:31:45[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 22:31:45[psd]:  # iter= 9850 eta= 0.0018214936247723 current error= 19912.590060234 
+2017-03-13 22:34:13[psd]:  Getting more images 
+2017-03-13 22:34:13[psd]:  Collecting 50 images. 
+2017-03-13 22:34:19[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 22:34:20[psd]:  # iter= 9900 eta= 0.001820664542558 current error= 19938.712963104 
+2017-03-13 22:34:20[psd]:  Computing Hessian 
+2017-03-13 22:34:20[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-13 23:00:03[psd]:  ddeltax : min/max = 0/28799.87109375 
+2017-03-13 23:00:03[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-13 23:00:03[psd]:  done 
+2017-03-13 23:02:31[psd]:  Getting more images 
+2017-03-13 23:02:31[psd]:  Collecting 50 images. 
+2017-03-13 23:02:38[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 23:02:38[psd]:  # iter= 9950 eta= 0.0018198362147407 current error= 19753.653787613 
+2017-03-13 23:05:06[psd]:  Getting more images 
+2017-03-13 23:05:06[psd]:  Collecting 50 images. 
+2017-03-13 23:05:07[psd]:  Setting weight handles to simple_network weights 
+2017-03-13 23:05:07[psd]:  tmp, deltas, dw sums are 24689.2578125  0.020807646214962   8.4206876754761 
+2017-03-13 23:05:07[psd]:  w sum (before) is -9.1250324249268 
+2017-03-13 23:05:07[psd]:  w sum (after) is -9.1042261123657 
+2017-03-13 23:05:07[psd]:  Setting weight handles to simple_network weights 
+2017-03-13 23:05:07[psd]:  tmp, deltas, dw sums are 24689.29296875  0.024339500814676   9.9306144714355 
+2017-03-13 23:05:07[psd]:  w sum (before) is -9.1042261123657 
+2017-03-13 23:05:07[psd]:  w sum (after) is -9.0798835754395 
+2017-03-13 23:05:07[psd]:  tmp, deltas, dw sums are 24689.345703125  0.020452197641134   8.3998775482178 
+2017-03-13 23:05:07[psd]:  w sum (before) is -9.0798835754395 
+2017-03-13 23:05:07[psd]:  w sum (after) is -9.0594291687012 
+2017-03-13 23:05:07[psd]:  tmp, deltas, dw sums are 24689.375  0.016638612374663   6.8629789352417 
+2017-03-13 23:05:07[psd]:  w sum (before) is -9.0594291687012 
+2017-03-13 23:05:07[psd]:  w sum (after) is -9.0427942276001 
+2017-03-13 23:05:07[psd]:  tmp, deltas, dw sums are 24689.47265625  0.026811767369509   11.180199623108 
+2017-03-13 23:05:07[psd]:  w sum (before) is -9.0427942276001 
+2017-03-13 23:05:07[psd]:  w sum (after) is -9.0159778594971 
+2017-03-13 23:05:07[psd]:  tmp, deltas, dw sums are 24689.759765625  0.040800027549267   17.245121002197 
+2017-03-13 23:05:07[psd]:  w sum (before) is -9.0159778594971 
+2017-03-13 23:05:07[psd]:  w sum (after) is -8.9751796722412 
+2017-03-13 23:05:07[psd]:  tmp, deltas, dw sums are 24689.767578125  0.018286826089025   7.7135381698608 
+2017-03-13 23:05:07[psd]:  w sum (before) is -8.9751796722412 
+2017-03-13 23:05:07[psd]:  w sum (after) is -8.9568929672241 
+2017-03-13 23:05:07[psd]:  tmp, deltas, dw sums are 24689.759765625  0.017877144739032   7.4958238601685 
+2017-03-13 23:05:07[psd]:  w sum (before) is -8.9568929672241 
+2017-03-13 23:05:07[psd]:  w sum (after) is -8.9390172958374 
+2017-03-13 23:05:07[psd]:  tmp, deltas, dw sums are 24689.75390625  0.015890261158347   6.6554198265076 
+2017-03-13 23:05:07[psd]:  w sum (before) is -8.9390172958374 
+2017-03-13 23:05:07[psd]:  w sum (after) is -8.9231252670288 
+2017-03-13 23:05:07[psd]:  tmp, deltas, dw sums are 24689.744140625  0.01705632917583   7.0872955322266 
+2017-03-13 23:05:07[psd]:  w sum (before) is -8.9231252670288 
+2017-03-13 23:05:07[psd]:  w sum (after) is -8.9060716629028 
+2017-03-13 23:05:08[psd]:  tmp, deltas, dw sums are 24689.759765625  0.023131303489208   9.718578338623 
+2017-03-13 23:05:08[psd]:  w sum (before) is -8.9060716629028 
+2017-03-13 23:05:08[psd]:  w sum (after) is -8.8829402923584 
+2017-03-13 23:05:08[psd]:  tmp, deltas, dw sums are 24689.740234375  0.013733670115471   5.7307276725769 
+2017-03-13 23:05:08[psd]:  w sum (before) is -8.8829402923584 
+2017-03-13 23:05:08[psd]:  w sum (after) is -8.8692035675049 
+2017-03-13 23:05:14[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-13 23:05:14[psd]:  # iter= 10000 eta= 0.001819008640291 current error= 19742.18784523 
+2017-03-13 23:05:14[psd]:  Training done 
+2017-03-13 23:05:14[psd]:  Saving mlp 

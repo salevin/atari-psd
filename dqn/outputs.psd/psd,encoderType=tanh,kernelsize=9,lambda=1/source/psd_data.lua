@@ -2,10 +2,10 @@ require 'util'
 
 local data_verbose = false
 
-function getdata( std)
+function getdata(images, std)
 
   init()
-  local data = collect_data(5000)
+  local data = collect_data(images or 5000)
 
   local dataset ={}
 
@@ -49,6 +49,10 @@ function getdata( std)
 
   function dataset:conv()
     dsample = torch.Tensor(1,nrows,ncols)
+  end
+
+  function dataset:getImages()
+    data = collect_data(images or 5000)
   end
 
   setmetatable(dataset, {__index = function(self, index)

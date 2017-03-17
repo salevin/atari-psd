@@ -1,0 +1,391 @@
+2017-03-08 23:13:16[psd]:  [program started on Wed Mar  8 23:13:16 2017] 
+2017-03-08 23:13:16[psd]:  [command line arguments] 
+2017-03-08 23:13:16[psd]:  linear false 
+2017-03-08 23:13:16[psd]:  conntable  
+2017-03-08 23:13:16[psd]:  encoderType tanh 
+2017-03-08 23:13:16[psd]:  rundir /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1 
+2017-03-08 23:13:16[psd]:  minhessian 0.001 
+2017-03-08 23:13:16[psd]:  nThread 8 
+2017-03-08 23:13:16[psd]:  hessian true 
+2017-03-08 23:13:16[psd]:  beta 1 
+2017-03-08 23:13:16[psd]:  maxhessian 500 
+2017-03-08 23:13:16[psd]:  nfiltersout 16 
+2017-03-08 23:13:16[psd]:  nfiltersin 1 
+2017-03-08 23:13:16[psd]:  v false 
+2017-03-08 23:13:16[psd]:  statinterval 50 
+2017-03-08 23:13:16[psd]:  hessianinterval 100 
+2017-03-08 23:13:16[psd]:  etadecayinterval 10000 
+2017-03-08 23:13:16[psd]:  eta 0.002 
+2017-03-08 23:13:16[psd]:  etadecay 0.1 
+2017-03-08 23:13:16[psd]:  maxiter 10000 
+2017-03-08 23:13:16[psd]:  dir outputs.psd 
+2017-03-08 23:13:16[psd]:  openmp true 
+2017-03-08 23:13:16[psd]:  seed 123211 
+2017-03-08 23:13:16[psd]:  kernelsize 9 
+2017-03-08 23:13:16[psd]:  wcar  
+2017-03-08 23:13:16[psd]:  lambda 1 
+2017-03-08 23:13:16[psd]:  [----------------------] 
+2017-03-08 23:13:16[psd]:  Torch Threads: 1 
+2017-03-08 23:13:16[psd]:  Using GPU device id: 0 
+2017-03-08 23:13:16[psd]:  Torch Seed: 1 
+2017-03-08 23:13:17[psd]:  CUTorch Seed: 1791095845 
+2017-03-08 23:13:18[psd]:  
+Playing: breakout 
+2017-03-08 23:13:18[psd]:  args.eta, self.eta are  nil 0.1 
+2017-03-08 23:13:18[psd]:  args.minibatch_size, self.minibatch_size are  32 32 
+2017-03-08 23:13:18[psd]:  self_start, etc are:  nil 2000 10000 
+2017-03-08 23:13:18[psd]:  Initializing ecn with args:  
+2017-03-08 23:13:18[psd]:  target_q 10000 
+2017-03-08 23:13:18[psd]:  ncols 1 
+2017-03-08 23:13:18[psd]:  replay_memory 1000000 
+2017-03-08 23:13:18[psd]:  min_reward -1 
+2017-03-08 23:13:18[psd]:  discount 0.99 
+2017-03-08 23:13:18[psd]:  learn_start 10000 
+2017-03-08 23:13:18[psd]:  hist_len 3 
+2017-03-08 23:13:18[psd]:  ep 1 
+2017-03-08 23:13:18[psd]:  network "convnet_atari3" 
+2017-03-08 23:13:18[psd]:  max_reward 1 
+2017-03-08 23:13:18[psd]:  gpu 0 
+2017-03-08 23:13:18[psd]:  n_replay 1 
+2017-03-08 23:13:18[psd]:  input_dims table: 0x41c123e8 
+2017-03-08 23:13:18[psd]:  verbose 2 
+2017-03-08 23:13:18[psd]:  actions table: 0x40c36930 
+2017-03-08 23:13:18[psd]:  clip_delta 1 
+2017-03-08 23:13:18[psd]:  valid_size 500 
+2017-03-08 23:13:18[psd]:  lr 0.00025 
+2017-03-08 23:13:18[psd]:  preproc net_downsample_2x_full_y 
+2017-03-08 23:13:18[psd]:  bufferSize 512 
+2017-03-08 23:13:18[psd]:  update_freq 4 
+2017-03-08 23:13:18[psd]:  minibatch_size 32 
+2017-03-08 23:13:18[psd]:  rescale_r 1 
+2017-03-08 23:13:18[psd]:  state_dim 7056 
+2017-03-08 23:13:18[psd]:  ep_end 0.1 
+2017-03-08 23:13:18[psd]:  ECN input size is  21172 
+2017-03-08 23:13:18[psd]:  nn.Sequential {
+  [input -> (1) -> (2) -> (3) -> (4) -> output]
+  (1): nn.Reshape(392)
+  (2): nn.Linear(392 -> 512)
+  (3): nn.Rectifier
+  (4): nn.Linear(512 -> 4)
+} 
+2017-03-08 23:13:18[psd]:  Convolutional layers flattened output size: 392 
+2017-03-08 23:13:18[psd]:  Here is the main network: 
+2017-03-08 23:13:18[psd]:  nn.Concat {
+  input
+    |`-> (1): nn.Sequential {
+    |      [input -> (1) -> (2) -> output]
+    |      (1): nn.Narrow
+    |      (2): nn.Sequential {
+    |        [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> (7) -> output]
+    |        (1): nn.Reshape(3x84x84)
+    |        (2): nn.SpatialConvolution(3 -> 32, 8x8, 4,4, 1,1)
+    |        (3): nn.Rectifier
+    |        (4): nn.SpatialConvolution(32 -> 64, 4x4, 2,2)
+    |        (5): nn.Rectifier
+    |        (6): nn.SpatialConvolution(64 -> 8, 3x3)
+    |        (7): nn.Rectifier
+    |      }
+    |    }
+     `-> (2): nn.Sequential {
+           [input -> (1) -> (2) -> output]
+           (1): nn.Narrow
+           (2): nn.Sequential {
+             [input -> (1) -> (2) -> (3) -> (4) -> (5) -> output]
+             (1): nn.Linear(7060 -> 512)
+             (2): nn.Tanh
+             (3): nn.Linear(512 -> 49)
+             (4): nn.Tanh
+             (5): nn.Reshape(1x7x7)
+           }
+         }
+     ... -> output
+} 
+2017-03-08 23:13:18[psd]:  The pred_training_network 
+2017-03-08 23:13:18[psd]:  nn.Concat {
+  input
+    |`-> (1): nn.Sequential {
+    |      [input -> (1) -> (2) -> output]
+    |      (1): nn.Narrow
+    |      (2): nn.Sequential {
+    |        [input -> (1) -> (2) -> (3) -> (4) -> (5) -> output]
+    |        (1): nn.Linear(7060 -> 512)
+    |        (2): nn.Tanh
+    |        (3): nn.Linear(512 -> 49)
+    |        (4): nn.Tanh
+    |        (5): nn.Reshape(1x7x7)
+    |      }
+    |    }
+     `-> (2): nn.Sequential {
+           [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> output]
+           (1): nn.Narrow
+           (2): nn.Narrow
+           (3): nn.Padding
+           (4): nn.Sequential {
+             [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> (7) -> output]
+             (1): nn.Reshape(3x84x84)
+             (2): nn.SpatialConvolution(3 -> 32, 8x8, 4,4, 1,1)
+             (3): nn.Rectifier
+             (4): nn.SpatialConvolution(32 -> 64, 4x4, 2,2)
+             (5): nn.Rectifier
+             (6): nn.SpatialConvolution(64 -> 8, 3x3)
+             (7): nn.Rectifier
+           }
+           (5): nn.Select
+           (6): nn.Reshape(1x7x7)
+         }
+     ... -> output
+} 
+2017-03-08 23:13:18[psd]:  Output size from pred_training_network is   32
+  2
+  7
+  7
+[torch.LongStorage of size 4]
+ 
+2017-03-08 23:13:18[psd]:  dC, dP sizes are   32
+  1
+  7
+  7
+[torch.LongStorage of size 4]
+  32
+  1
+  7
+  7
+[torch.LongStorage of size 4]
+ 
+2017-03-08 23:13:18[psd]:  Hier netwwork nn.Sequential {
+  [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> output]
+  (1): nn.Narrow
+  (2): nn.Narrow
+  (3): nn.Padding
+  (4): nn.Sequential {
+    [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> (7) -> output]
+    (1): nn.Reshape(3x84x84)
+    (2): nn.SpatialConvolution(3 -> 32, 8x8, 4,4, 1,1)
+    (3): nn.Rectifier
+    (4): nn.SpatialConvolution(32 -> 64, 4x4, 2,2)
+    (5): nn.Rectifier
+    (6): nn.SpatialConvolution(64 -> 8, 3x3)
+    (7): nn.Rectifier
+  }
+  (5): nn.Select
+  (6): nn.Reshape(1x7x7)
+} 
+2017-03-08 23:13:18[psd]:  Hier network output size is   32
+  1
+  7
+  7
+[torch.LongStorage of size 4]
+ 
+2017-03-08 23:13:18[psd]:  Went backward through pred_training_network successfully. 
+2017-03-08 23:13:18[psd]:  The final network 
+2017-03-08 23:13:18[psd]:  nn.Sequential {
+  [input -> (1) -> (2) -> output]
+  (1): nn.Concat {
+    input
+      |`-> (1): nn.Sequential {
+      |      [input -> (1) -> (2) -> output]
+      |      (1): nn.Narrow
+      |      (2): nn.Sequential {
+      |        [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> (7) -> output]
+      |        (1): nn.Reshape(3x84x84)
+      |        (2): nn.SpatialConvolution(3 -> 32, 8x8, 4,4, 1,1)
+      |        (3): nn.Rectifier
+      |        (4): nn.SpatialConvolution(32 -> 64, 4x4, 2,2)
+      |        (5): nn.Rectifier
+      |        (6): nn.SpatialConvolution(64 -> 8, 3x3)
+      |        (7): nn.Rectifier
+      |      }
+      |    }
+       `-> (2): nn.Sequential {
+             [input -> (1) -> (2) -> output]
+             (1): nn.Narrow
+             (2): nn.Sequential {
+               [input -> (1) -> (2) -> (3) -> (4) -> (5) -> output]
+               (1): nn.Linear(7060 -> 512)
+               (2): nn.Tanh
+               (3): nn.Linear(512 -> 49)
+               (4): nn.Tanh
+               (5): nn.Reshape(1x7x7)
+             }
+           }
+       ... -> output
+  }
+  (2): nn.Sequential {
+    [input -> (1) -> (2) -> output]
+    (1): nn.Narrow
+    (2): nn.Sequential {
+      [input -> (1) -> (2) -> (3) -> (4) -> output]
+      (1): nn.Reshape(392)
+      (2): nn.Linear(392 -> 512)
+      (3): nn.Rectifier
+      (4): nn.Linear(512 -> 4)
+    }
+  }
+} 
+2017-03-08 23:13:18[psd]:  CUDAfied network 
+2017-03-08 23:13:18[psd]:  Testing forward pass. 
+2017-03-08 23:13:18[psd]:  Forward output size is   32
+  4
+[torch.LongStorage of size 2]
+ 
+2017-03-08 23:13:18[psd]:  Testing backward pass. 
+2017-03-08 23:13:18[psd]:  Printing network. 
+2017-03-08 23:13:18[psd]:  dqn.ecn 
+2017-03-08 23:13:22[psd]:  Set up Torch using these options: 
+2017-03-08 23:13:22[psd]:  eval_steps 100000 
+2017-03-08 23:13:22[psd]:  seed 1 
+2017-03-08 23:13:22[psd]:  name ecn_breakout_FULL_Y 
+2017-03-08 23:13:22[psd]:  verbose 2 
+2017-03-08 23:13:22[psd]:  network "convnet_atari3" 
+2017-03-08 23:13:22[psd]:  reload  
+2017-03-08 23:13:22[psd]:  pool_frms table: 0x419e37e0 
+2017-03-08 23:13:22[psd]:  saveNetworkParams true 
+2017-03-08 23:13:22[psd]:  full_display false 
+2017-03-08 23:13:22[psd]:  gpu 1 
+2017-03-08 23:13:22[psd]:  eval_freq 10000 
+2017-03-08 23:13:22[psd]:  tensorType torch.FloatTensor 
+2017-03-08 23:13:22[psd]:  env_params table: 0x419e3808 
+2017-03-08 23:13:22[psd]:  steps 100000 
+2017-03-08 23:13:22[psd]:  prog_freq 5000 
+2017-03-08 23:13:22[psd]:  agent_params table: 0x419e3718 
+2017-03-08 23:13:22[psd]:  actrep 4 
+2017-03-08 23:13:22[psd]:  framework alewrap 
+2017-03-08 23:13:22[psd]:  agent NeuralQLearner 
+2017-03-08 23:13:22[psd]:  threads 1 
+2017-03-08 23:13:22[psd]:  save_versions 0 
+2017-03-08 23:13:22[psd]:  random_starts 30 
+2017-03-08 23:13:22[psd]:  game_path ../roms/ 
+2017-03-08 23:13:22[psd]:  save_freq 50000 
+2017-03-08 23:13:22[psd]:  env breakout 
+2017-03-08 23:13:22[psd]:  Collecting 50 images. 
+2017-03-08 23:13:23[psd]:  Convolutional psd 
+2017-03-08 23:13:23[psd]:  Starting Training 
+2017-03-08 23:13:24[psd]:  Computing Hessian 
+2017-03-08 23:13:24[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-08 23:16:25[psd]:  ddeltax : min/max = 0/51793.4453125 
+2017-03-08 23:16:25[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-08 23:16:25[psd]:  done 
+2017-03-08 23:16:25[psd]:  oops large dx 7528.2856445312 -6459.326171875 
+2017-03-08 23:16:27[psd]:  oops large dx 4411.224609375 -3991.6264648438 
+2017-03-08 23:16:30[psd]:  oops large dx 2458.4223632812 -2734.189453125 
+2017-03-08 23:16:33[psd]:  oops large dx 2346.4416503906 -2660.67578125 
+2017-03-08 23:16:35[psd]:  oops large dx 1917.8756103516 -1963.5930175781 
+2017-03-08 23:16:38[psd]:  oops large dx 1675.0972900391 -1796.1514892578 
+2017-03-08 23:16:41[psd]:  oops large dx 1420.0031738281 -1540.4497070312 
+2017-03-08 23:16:44[psd]:  oops large dx 1215.9017333984 -1341.1395263672 
+2017-03-08 23:16:47[psd]:  oops large dx 1041.9467773438 -1167.77734375 
+2017-03-08 23:16:50[psd]:  oops large dx 889.50329589844 -1022.0493774414 
+2017-03-08 23:16:53[psd]:  oops large dx 763.14819335938 -883.61547851562 
+2017-03-08 23:16:56[psd]:  oops large dx 653.31683349609 -771.64544677734 
+2017-03-08 23:16:59[psd]:  oops large dx 559.34344482422 -672.24481201172 
+2017-03-08 23:17:02[psd]:  oops large dx 483.68948364258 -588.55523681641 
+2017-03-08 23:17:05[psd]:  oops large dx 409.94192504883 -513.56988525391 
+2017-03-08 23:17:08[psd]:  oops large dx 361.91271972656 -446.58694458008 
+2017-03-08 23:17:11[psd]:  oops large dx 310.46206665039 -399.1220703125 
+2017-03-08 23:17:14[psd]:  oops large dx 269.17630004883 -338.57171630859 
+2017-03-08 23:17:17[psd]:  oops large dx 233.45823669434 -307.19784545898 
+2017-03-08 23:17:20[psd]:  oops large dx 212.60386657715 -262.86517333984 
+2017-03-08 23:17:23[psd]:  oops large dx 188.02635192871 -233.9231262207 
+2017-03-08 23:17:26[psd]:  oops large dx 175.31442260742 -199.98779296875 
+2017-03-08 23:17:29[psd]:  oops large dx 171.18630981445 -184.41839599609 
+2017-03-08 23:17:32[psd]:  oops large dx 176.69316101074 -168.51342773438 
+2017-03-08 23:17:34[psd]:  oops large dx 166.89935302734 -155.59184265137 
+2017-03-08 23:17:37[psd]:  oops large dx 169.94448852539 -154.89361572266 
+2017-03-08 23:17:40[psd]:  oops large dx 165.25820922852 -150.04118347168 
+2017-03-08 23:17:43[psd]:  oops large dx 161.38935852051 -144.5518951416 
+2017-03-08 23:17:46[psd]:  oops large dx 158.34745788574 -138.86959838867 
+2017-03-08 23:17:49[psd]:  oops large dx 146.48173522949 -126.48770904541 
+2017-03-08 23:17:52[psd]:  oops large dx 148.50807189941 -128.77935791016 
+2017-03-08 23:17:55[psd]:  oops large dx 137.39585876465 -115.11555480957 
+2017-03-08 23:17:58[psd]:  oops large dx 144.57037353516 -122.63333129883 
+2017-03-08 23:18:01[psd]:  oops large dx 142.63230895996 -116.62367248535 
+2017-03-08 23:18:04[psd]:  oops large dx 134.42663574219 -112.53239440918 
+2017-03-08 23:18:07[psd]:  oops large dx 136.9104309082 -109.77448272705 
+2017-03-08 23:18:10[psd]:  oops large dx 133.46832275391 -106.97998809814 
+2017-03-08 23:18:13[psd]:  oops large dx 123.84187316895 -96.922981262207 
+2017-03-08 23:18:16[psd]:  oops large dx 124.49172210693 -100.20993041992 
+2017-03-08 23:18:19[psd]:  oops large dx 123.69839477539 -95.566413879395 
+2017-03-08 23:18:22[psd]:  oops large dx 117.06404876709 -89.829208374023 
+2017-03-08 23:18:25[psd]:  oops large dx 119.5212020874 -93.001602172852 
+2017-03-08 23:18:28[psd]:  oops large dx 115.83419799805 -88.041053771973 
+2017-03-08 23:18:31[psd]:  oops large dx 110.33422851562 -83.097129821777 
+2017-03-08 23:18:33[psd]:  oops large dx 113.91843414307 -87.292129516602 
+2017-03-08 23:18:36[psd]:  oops large dx 109.29287719727 -83.858436584473 
+2017-03-08 23:18:39[psd]:  oops large dx 111.26040649414 -88.037498474121 
+2017-03-08 23:18:42[psd]:  oops large dx 108.34275817871 -83.287239074707 
+2017-03-08 23:18:45[psd]:  oops large dx 103.3484954834 -78.420547485352 
+2017-03-08 23:18:48[psd]:  Getting more images 
+2017-03-08 23:18:48[psd]:  Collecting 50 images. 
+2017-03-08 23:18:55[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-08 23:18:55[psd]:  # iter= 50 eta= 0.002 current error= 79396.521820068 
+2017-03-08 23:21:22[psd]:  Getting more images 
+2017-03-08 23:21:22[psd]:  Collecting 50 images. 
+2017-03-08 23:21:29[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-08 23:21:29[psd]:  # iter= 100 eta= 0.0019990004997501 current error= 32490.882118225 
+2017-03-08 23:21:29[psd]:  Computing Hessian 
+2017-03-08 23:21:29[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-08 23:47:09[psd]:  ddeltax : min/max = 0/49997.28515625 
+2017-03-08 23:47:09[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-08 23:47:09[psd]:  done 
+2017-03-08 23:49:37[psd]:  Getting more images 
+2017-03-08 23:49:37[psd]:  Collecting 50 images. 
+2017-03-08 23:49:43[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-08 23:49:44[psd]:  # iter= 150 eta= 0.001998001998002 current error= 27411.92514801 
+2017-03-08 23:52:11[psd]:  Getting more images 
+2017-03-08 23:52:11[psd]:  Collecting 50 images. 
+2017-03-08 23:52:18[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-08 23:52:18[psd]:  # iter= 200 eta= 0.0019970044932601 current error= 24942.501991272 
+2017-03-08 23:52:18[psd]:  Computing Hessian 
+2017-03-08 23:52:18[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-09 00:17:59[psd]:  ddeltax : min/max = 0/40961.3671875 
+2017-03-09 00:17:59[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-09 00:17:59[psd]:  done 
+2017-03-09 00:20:27[psd]:  Getting more images 
+2017-03-09 00:20:27[psd]:  Collecting 50 images. 
+2017-03-09 00:20:33[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-09 00:20:34[psd]:  # iter= 250 eta= 0.0019960079840319 current error= 23921.395195007 
+2017-03-09 00:23:01[psd]:  Getting more images 
+2017-03-09 00:23:01[psd]:  Collecting 50 images. 
+2017-03-09 00:23:08[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-09 00:23:08[psd]:  # iter= 300 eta= 0.0019950124688279 current error= 22933.202575684 
+2017-03-09 00:23:08[psd]:  Computing Hessian 
+2017-03-09 00:23:08[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-09 00:48:48[psd]:  ddeltax : min/max = 0/36221.01171875 
+2017-03-09 00:48:48[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-09 00:48:48[psd]:  done 
+2017-03-09 00:51:15[psd]:  Getting more images 
+2017-03-09 00:51:15[psd]:  Collecting 50 images. 
+2017-03-09 00:51:22[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-09 00:51:22[psd]:  # iter= 350 eta= 0.0019940179461615 current error= 22359.852779388 
+2017-03-09 00:53:50[psd]:  Getting more images 
+2017-03-09 00:53:50[psd]:  Collecting 50 images. 
+2017-03-09 00:53:56[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-09 00:53:57[psd]:  # iter= 400 eta= 0.0019930244145491 current error= 21849.424423218 
+2017-03-09 00:53:57[psd]:  Computing Hessian 
+2017-03-09 00:53:57[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-09 01:19:34[psd]:  ddeltax : min/max = 0/32921.11328125 
+2017-03-09 01:19:34[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-09 01:19:34[psd]:  done 
+2017-03-09 01:22:02[psd]:  Getting more images 
+2017-03-09 01:22:02[psd]:  Collecting 50 images. 
+2017-03-09 01:22:08[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-09 01:22:09[psd]:  # iter= 450 eta= 0.00199203187251 current error= 21446.46037674 
+2017-03-09 01:24:37[psd]:  Getting more images 
+2017-03-09 01:24:37[psd]:  Collecting 50 images. 
+2017-03-09 01:24:43[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-09 01:24:44[psd]:  # iter= 500 eta= 0.0019910403185665 current error= 20829.999923706 
+2017-03-09 01:24:44[psd]:  Computing Hessian 
+2017-03-09 01:24:44[psd]:  Min Hessian=0.001 Max Hessian=500 
+2017-03-09 01:50:22[psd]:  ddeltax : min/max = 0/30575.701171875 
+2017-03-09 01:50:22[psd]:  ddeltax : min/max = 0.0010000000474975/500 
+2017-03-09 01:50:22[psd]:  done 
+2017-03-09 01:52:50[psd]:  Getting more images 
+2017-03-09 01:52:50[psd]:  Collecting 50 images. 
+2017-03-09 01:52:56[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-09 01:52:57[psd]:  # iter= 550 eta= 0.0019900497512438 current error= 21026.969554901 
+2017-03-09 01:55:25[psd]:  Getting more images 
+2017-03-09 01:55:25[psd]:  Collecting 50 images. 
+2017-03-09 01:55:31[psd]:  Storing model to: /home/sam/atari-psd/dqn/outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models 
+2017-03-09 01:55:32[psd]:  # iter= 600 eta= 0.0019890601690701 current error= 20879.343612671 
+2017-03-09 01:55:32[psd]:  Computing Hessian 
+2017-03-09 01:55:32[psd]:  Min Hessian=0.001 Max Hessian=500 

@@ -43,7 +43,6 @@ print(mlp.beta)
 
 function sleep(n)
   os.execute("sleep " .. tonumber(n))
-  print("not sleeping")
 end
 
 for i=1,100 do
@@ -58,14 +57,18 @@ for i=1,100 do
   mlp.decoder:updateOutput(input,prediction)
   -- input=mlp.decoder.code
 
-  c = image.toDisplayTensor({input=input,nrow=math.ceil(math.sqrt(res:size(1))),symmetric=true,padding=1})
+  c = image.toDisplayTensor({input=res,nrow=math.ceil(math.sqrt(res:size(1))),symmetric=true,padding=1})
   w1 = image.display({image=c, win=w1})
 
+  c = image.toDisplayTensor({input=mlp.decoder.code,nrow=math.ceil(math.sqrt(res:size(1))),symmetric=true,padding=1})
+  w3 = image.display({image=c, win=w3})
 
-  c = image.toDisplayTensor({input=mlp.encoder:forward(input, target),nrow=math.ceil(math.sqrt(input:size(1))),symmetric=true,padding=1})
+
+  c = image.toDisplayTensor({input=input,nrow=math.ceil(math.sqrt(input:size(1))),symmetric=true,padding=1})
   w2 = image.display({image=c, win=w2})
 
-  sleep(2)
+
+  sleep(5)
 end
 
 input1 = nn.Identity()()

@@ -16,7 +16,7 @@ require 'TransitionTable'
 require 'Rectifier'
 require 'ecn'
 
-
+dofile 'psd_data.lua'
 
 function torchSetup(_opt)
     _opt = _opt or {}

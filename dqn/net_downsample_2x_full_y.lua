@@ -9,7 +9,7 @@ require "Scale"
 
 local function create_network(args)
     -- Y (luminance)
-    return nn.Scale(84, 84, true)
+    return nn.Scale(180, 160, true)
 end
 
 return create_network

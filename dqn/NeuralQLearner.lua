@@ -225,6 +225,7 @@ function nql:preprocess(rawstate)
   end
   print(state:size())
   -- Run the forward pass on the encoder here
+  -- encoder takes in image of 180,160
 
   return state
 end

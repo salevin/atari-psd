@@ -15,6 +15,7 @@ require 'NeuralQLearner'
 require 'TransitionTable'
 require 'Rectifier'
 require 'ecn'
+require 'unsup'
 
 function torchSetup(_opt)
     _opt = _opt or {}

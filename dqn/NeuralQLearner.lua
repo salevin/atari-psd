@@ -137,6 +137,7 @@ function nql:__init(args)
 
   -- Load dqn
   psd = torch.DiskFile('outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models/model.bin','r'):binary():readObject()
+  print(psd)
 
   if self.gpu and self.gpu >= 0 then
     self.network:cuda()
@@ -769,3 +770,4 @@ function nql:report()
   print(get_weight_norms(self.network))
   print(get_grad_norms(self.network))
 end
+

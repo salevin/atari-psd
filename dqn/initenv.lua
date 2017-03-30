@@ -16,8 +16,6 @@ require 'TransitionTable'
 require 'Rectifier'
 require 'ecn'
 
-dofile 'psd_data.lua'
-
 function torchSetup(_opt)
     _opt = _opt or {}
     local opt = table.copy(_opt)
@@ -133,7 +131,7 @@ function setup(_opt)
     end
 
     local agent = dqn[_opt.agent](_opt.agent_params)
-    
+
     if opt.verbose >= 1 then
         print('Set up Torch using these options:')
         for k, v in pairs(opt) do

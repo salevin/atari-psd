@@ -135,6 +135,9 @@ function nql:__init(args)
   self.preproc = self:preproc()
   self.preproc:float()
 
+  -- Load dqn
+  psd = torch.DiskFile('outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models/model.bin','r'):binary():readObject()
+
   if self.gpu and self.gpu >= 0 then
     self.network:cuda()
     self.tensor_type = torch.CudaTensor
@@ -212,11 +215,11 @@ end
 
 
 function nql:preprocess(rawstate)
-  -- Run the forward pass on the encoder here
   if self.preproc then
     return self.preproc:forward(rawstate:float())
     :clone():reshape(self.state_dim)
   end
+  -- Run the forward pass on the encoder here
 
   return rawstate
 end

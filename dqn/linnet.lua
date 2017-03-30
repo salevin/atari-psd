@@ -11,6 +11,8 @@ function create_network(args)
     local net = nn.Sequential()
     net:add(nn.Reshape(unpack(args.input_dims)))
 
+    local nel = 160*180*16
+
     -- reshape all feature planes into a vector per example
     net:add(nn.Reshape(nel))
 

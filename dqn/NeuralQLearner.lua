@@ -137,7 +137,8 @@ function nql:__init(args)
 
   -- Load dqn
   psd = torch.DiskFile('outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models/model.bin','r'):binary():readObject()
-  print(psd)
+  print("Printing PSD encoder")
+  print(psd.encoder)
 
   if self.gpu and self.gpu >= 0 then
     self.network:cuda()

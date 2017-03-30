@@ -217,13 +217,16 @@ end
 
 
 function nql:preprocess(rawstate)
+  state = rawstate
+  print(state:size())
   if self.preproc then
-    return self.preproc:forward(rawstate:float())
+    state = self.preproc:forward(rawstate:float())
     :clone():reshape(self.state_dim)
   end
+  print(state:size())
   -- Run the forward pass on the encoder here
 
-  return rawstate
+  return state
 end
 
 

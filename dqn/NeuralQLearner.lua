@@ -76,6 +76,7 @@ function nql:__init(args)
         -- try to load saved agent
         local err_msg, exp = pcall(torch.load, self.network)
         if not err_msg then
+            print(self.network)
             error("Could not find network file ")
         end
         if self.best and exp.best_model then
@@ -184,7 +185,7 @@ function nql:preprocess(rawstate)
   -- Run the forward pass on the encoder here
   -- encoder takes in image of 180,160
   codewords = psd.encoder:forward(state, state)
-  print(features:size())
+  print(codewords:size())
   -- then run :reshape(self.state_dim)
 
   return state

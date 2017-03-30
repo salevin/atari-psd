@@ -221,11 +221,12 @@ function nql:preprocess(rawstate)
   print(state:size())
   if self.preproc then
     state = self.preproc:forward(rawstate:float())
-    :clone():reshape(self.state_dim)
+    :clone()
   end
   print(state:size())
   -- Run the forward pass on the encoder here
   -- encoder takes in image of 180,160
+  -- then run :reshape(self.state_dim)
 
   return state
 end

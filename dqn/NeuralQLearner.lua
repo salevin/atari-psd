@@ -226,6 +226,8 @@ function nql:preprocess(rawstate)
   print(state:size())
   -- Run the forward pass on the encoder here
   -- encoder takes in image of 180,160
+  features = psd.encoder:forward(state, state)
+  print(features:size())
   -- then run :reshape(self.state_dim)
 
   return state

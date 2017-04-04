@@ -57,6 +57,7 @@ function nql:__init(args)
     self.ncols          = args.ncols or 1  -- number of color channels in input
     self.input_dims     = args.input_dims or {self.hist_len*self.ncols, 84, 84}
     self.preproc        = args.preproc  -- name of preprocessing network
+    self.psd            = args.psd  -- location of psd network
     self.histType       = args.histType or "linear"  -- history type to use
     self.histSpacing    = args.histSpacing or 1
     self.nonTermProb    = args.nonTermProb or 1
@@ -112,9 +113,11 @@ function nql:__init(args)
 
 
     -- Load dqn
-    psd = torch.DiskFile('outputs.psd/psd,encoderType=tanh,kernelsize=9,lambda=1/models/model.bin','r'):binary():readObject()
-    print("Printing PSD encoder")
-    print(psd.encoder)
+    if self.dqn then
+      psd = torch.DiskFile(self.dqn,'r'):binary():readObject()
+      print("Printing PSD encoder")
+      print(psd.encoder)
+    end
 
     if self.gpu and self.gpu >= 0 then
         self.network:cuda()

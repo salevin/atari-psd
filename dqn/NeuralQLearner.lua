@@ -8,6 +8,8 @@ if not dqn then
     require 'initenv'
 end
 
+require 'image'
+
 local nql = torch.class('dqn.NeuralQLearner')
 
 
@@ -180,13 +182,21 @@ function nql:preprocess(rawstate)
   if self.preproc then
     state = self.preproc:forward(rawstate:float())
     :clone()
+
+    print(state:size())
+
+    -- Run the forward pass on the encoder here
+    -- encoder takes in image of 180,160
+    codewords = psd.encoder:forward(state, state)
+
+    print(codewords:size())
+    image.scale(codewords, 7, 7)
+    print(codewords:size())
+    -- then run image.scale (import image)
+    -- then run :reshape(self.state_dim)
+
   end
-  print(state:size())
-  -- Run the forward pass on the encoder here
-  -- encoder takes in image of 180,160
-  codewords = psd.encoder:forward(state, state)
-  print(codewords:size())
-  -- then run :reshape(self.state_dim)
+
 
   return state
 end

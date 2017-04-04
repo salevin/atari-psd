@@ -181,22 +181,19 @@ end
 
 function nql:preprocess(rawstate)
   state = rawstate
-  print(state:size())
   if self.preproc then
     state = self.preproc:forward(rawstate:float())
     :clone()
 
-    print(state:size())
 
     -- Run the forward pass on the encoder here
     -- encoder takes in image of 180,160
     codewords = psd.encoder:forward(state, state)
 
-    print(codewords:size())
-    codewords = image.scale(codewords, 7, 7)
-    print(codewords:size())
     -- then run image.scale (import image)
     -- then run :reshape(self.state_dim)
+    codewords = image.scale(codewords, 32, 32):reshape(16*32*32)
+
     return codewords
 
   end

@@ -112,9 +112,9 @@ function nql:__init(args)
     self.preproc:float()
 
 
-    -- Load dqn
-    if self.dqn then
-      psd = torch.DiskFile(self.dqn,'r'):binary():readObject()
+    -- Load psd
+    if self.psd then
+      psd = torch.DiskFile(self.psd,'r'):binary():readObject()
       print("Printing PSD encoder")
       print(psd.encoder)
     end

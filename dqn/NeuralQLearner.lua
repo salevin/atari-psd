@@ -194,6 +194,7 @@ function nql:preprocess(rawstate)
     print(codewords:size())
     -- then run image.scale (import image)
     -- then run :reshape(self.state_dim)
+    return codewords
 
   end
 

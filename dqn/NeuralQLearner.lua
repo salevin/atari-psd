@@ -190,7 +190,7 @@ function nql:preprocess(rawstate)
     codewords = psd.encoder:forward(state, state)
 
     print(codewords:size())
-    image.scale(codewords, 7, 7)
+    codewords = image.scale(codewords, 7, 7)
     print(codewords:size())
     -- then run image.scale (import image)
     -- then run :reshape(self.state_dim)

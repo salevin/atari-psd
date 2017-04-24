@@ -267,6 +267,10 @@ end
 function nql:qLearnMinibatch()
   -- Perform a minibatch Q-learning update:
   -- w += alpha * (r + gamma max Q(s2,a2) - Q(s,a)) * dQ(s,a)/dw
+  self.w, self.dw = self.network:getParameters()
+  print(self.w)
+  print(self.dw)
+
   assert(self.transitions:size() > self.minibatch_size)
 
   local s, a, r, s2, term = self.transitions:sample(self.minibatch_size)
